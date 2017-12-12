@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\PiRadio.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>16384</length>
+      <used>3707</used>
+      <free>12677</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>768</length>
+      <used>106</used>
+      <free>662</free>
+    </memory>
+  </executable>
+</project>
