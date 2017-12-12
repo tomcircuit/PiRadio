@@ -3,38 +3,6 @@
 [d edition pro ]
 [d chip 18F44K22 ]
 [d frameptr 4065 ]
-"55 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
-[e E7261 . `uc
-RESET 0
-STANDBY 1
-BOOTING 2
-OPERATE 3
-SHUTDOWN 4
-PI_CONTROL 5
-]
-"351
-[e E7193 . `uc
-channel_TUNE 0
-channel_BAND 1
-channel_VOL 2
-channel_PI5V 15
-channel_PI3V 25
-channel_CTMU 29
-channel_DAC 30
-channel_FVRBuf2 31
-]
-"531
-[e E7163 . `uc
-I2C2_SLAVE_WRITE_REQUEST 0
-I2C2_SLAVE_READ_REQUEST 1
-I2C2_SLAVE_WRITE_COMPLETED 2
-I2C2_SLAVE_READ_COMPLETED 3
-]
-"533
-[e E7243 . `uc
-SLAVE_NORMAL_DATA 0
-SLAVE_DATA_ADDRESS 1
-]
 "80 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\mcc_generated_files/adc.c
 [e E6975 . `uc
 channel_TUNE 0
@@ -53,49 +21,82 @@ I2C2_SLAVE_READ_REQUEST 1
 I2C2_SLAVE_WRITE_COMPLETED 2
 I2C2_SLAVE_READ_COMPLETED 3
 ]
-"464 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\doprnt.c
+"54 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+[e E7259 . `uc
+RESET 0
+STANDBY 1
+BOOTING 2
+OPERATE 3
+SHUTDOWN 4
+PI_CONTROL 5
+MAX_STATES 6
+]
+"361
+[e E7193 . `uc
+channel_TUNE 0
+channel_BAND 1
+channel_VOL 2
+channel_PI5V 15
+channel_PI3V 25
+channel_CTMU 29
+channel_DAC 30
+channel_FVRBuf2 31
+]
+"549
+[e E7163 . `uc
+I2C2_SLAVE_WRITE_REQUEST 0
+I2C2_SLAVE_READ_REQUEST 1
+I2C2_SLAVE_WRITE_COMPLETED 2
+I2C2_SLAVE_READ_COMPLETED 3
+]
+"551
+[e E7243 . `uc
+SLAVE_NORMAL_DATA 0
+SLAVE_DATA_ADDRESS 1
+]
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftdiv.c
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"20 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftsub.c
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\isdigit.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
 [v _isdigit isdigit `(b  1 e 0 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\sprcadd.c
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\sprcdiv.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\sprcmul.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"65 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+"76 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"437
+"455
 [v _update_status_reg update_status_reg `(v  1 e 1 0 ]
-"460
-[v _pi_supply_off pi_supply_off `(v  1 e 1 0 ]
-"466
-[v _pi_supply_on pi_supply_on `(v  1 e 1 0 ]
-"472
-[v _request_pi_run request_pi_run `(v  1 e 1 0 ]
 "478
+[v _pi_supply_off pi_supply_off `(v  1 e 1 0 ]
+"484
+[v _pi_supply_on pi_supply_on `(v  1 e 1 0 ]
+"490
+[v _request_pi_run request_pi_run `(v  1 e 1 0 ]
+"496
 [v _request_pi_stop request_pi_stop `(v  1 e 1 0 ]
-"530
+"548
 [v _I2C2_StatusCallback I2C2_StatusCallback `(v  1 e 1 0 ]
 "58 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -139,7 +140,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v _TMR5_HasOverflowOccured TMR5_HasOverflowOccured `(uc  1 e 1 0 ]
 "7 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\ws2812.c
 [v _ws2812_send ws2812_send `(v  1 e 1 0 ]
-"50 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f44k22.h
+"50 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
 "95
 [v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
@@ -151,11 +152,11 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v _ANSELE ANSELE `VEuc  1 e 1 @3900 ]
 "1572
 [v _T5GCON T5GCON `VEuc  1 e 1 @3917 ]
-[s S916 . 1 `uc 1 . 1 0 :3:0 
+[s S391 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T5GGO_NOT_DONE 1 0 :1:3 
 ]
 "1602
-[s S919 . 1 `uc 1 T5GSS 1 0 :2:0 
+[s S394 . 1 `uc 1 T5GSS 1 0 :2:0 
 `uc 1 T5GVAL 1 0 :1:2 
 `uc 1 T5GGO_nDONE 1 0 :1:3 
 `uc 1 T5GSPM 1 0 :1:4 
@@ -163,30 +164,30 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 T5GPOL 1 0 :1:6 
 `uc 1 TMR5GE 1 0 :1:7 
 ]
-[s S927 . 1 `uc 1 T5GSS0 1 0 :1:0 
+[s S402 . 1 `uc 1 T5GSS0 1 0 :1:0 
 `uc 1 T5GSS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T5GGO 1 0 :1:3 
 ]
-[s S932 . 1 `uc 1 . 1 0 :3:0 
+[s S407 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T5G_DONE 1 0 :1:3 
 ]
-[u S935 . 1 `S916 1 . 1 0 `S919 1 . 1 0 `S927 1 . 1 0 `S932 1 . 1 0 ]
-[v _T5GCONbits T5GCONbits `VES935  1 e 1 @3917 ]
+[u S410 . 1 `S391 1 . 1 0 `S394 1 . 1 0 `S402 1 . 1 0 `S407 1 . 1 0 ]
+[v _T5GCONbits T5GCONbits `VES410  1 e 1 @3917 ]
 "1667
 [v _T5CON T5CON `VEuc  1 e 1 @3918 ]
-[s S864 . 1 `uc 1 . 1 0 :2:0 
+[s S339 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_T5SYNC 1 0 :1:2 
 ]
 "1701
-[s S867 . 1 `uc 1 TMR5ON 1 0 :1:0 
+[s S342 . 1 `uc 1 TMR5ON 1 0 :1:0 
 `uc 1 T5RD16 1 0 :1:1 
 `uc 1 nT5SYNC 1 0 :1:2 
 `uc 1 T5SOSCEN 1 0 :1:3 
 `uc 1 T5CKPS 1 0 :2:4 
 `uc 1 TMR5CS 1 0 :2:6 
 ]
-[s S874 . 1 `uc 1 . 1 0 :2:0 
+[s S349 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T5SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T5CKPS0 1 0 :1:4 
@@ -194,13 +195,13 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 TMR5CS0 1 0 :1:6 
 `uc 1 TMR5CS1 1 0 :1:7 
 ]
-[s S882 . 1 `uc 1 . 1 0 :1:0 
+[s S357 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD165 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SOSCEN5 1 0 :1:3 
 ]
-[u S887 . 1 `S864 1 . 1 0 `S867 1 . 1 0 `S874 1 . 1 0 `S882 1 . 1 0 ]
-[v _T5CONbits T5CONbits `VES887  1 e 1 @3918 ]
+[u S362 . 1 `S339 1 . 1 0 `S342 1 . 1 0 `S349 1 . 1 0 `S357 1 . 1 0 ]
+[v _T5CONbits T5CONbits `VES362  1 e 1 @3918 ]
 "1776
 [v _TMR5 TMR5 `VEus  1 e 2 @3919 ]
 "1783
@@ -215,7 +216,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v _SSP2MSK SSP2MSK `VEuc  1 e 1 @3946 ]
 "3531
 [v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3947 ]
-[s S1320 . 1 `uc 1 SEN 1 0 :1:0 
+[s S795 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -225,7 +226,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 GCEN 1 0 :1:7 
 ]
 "3566
-[s S1329 . 1 `uc 1 SEN2 1 0 :1:0 
+[s S804 . 1 `uc 1 SEN2 1 0 :1:0 
 `uc 1 ADMSK12 1 0 :1:1 
 `uc 1 ADMSK22 1 0 :1:2 
 `uc 1 ADMSK32 1 0 :1:3 
@@ -234,30 +235,30 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 ACKSTAT2 1 0 :1:6 
 `uc 1 GCEN2 1 0 :1:7 
 ]
-[s S1338 . 1 `uc 1 . 1 0 :1:0 
+[s S813 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RSEN2 1 0 :1:1 
 `uc 1 PEN2 1 0 :1:2 
 `uc 1 RCEN2 1 0 :1:3 
 `uc 1 ADMSK42 1 0 :1:4 
 `uc 1 ADMSK52 1 0 :1:5 
 ]
-[u S1345 . 1 `S1320 1 . 1 0 `S1329 1 . 1 0 `S1338 1 . 1 0 ]
-[v _SSP2CON2bits SSP2CON2bits `VES1345  1 e 1 @3947 ]
+[u S820 . 1 `S795 1 . 1 0 `S804 1 . 1 0 `S813 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES820  1 e 1 @3947 ]
 "3676
 [v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @3948 ]
-[s S1381 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S860 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
 "3706
-[s S1387 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S866 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[s S1392 . 1 `uc 1 SSPM02 1 0 :1:0 
+[s S871 . 1 `uc 1 SSPM02 1 0 :1:0 
 `uc 1 SSPM12 1 0 :1:1 
 `uc 1 SSPM22 1 0 :1:2 
 `uc 1 SSPM32 1 0 :1:3 
@@ -266,18 +267,18 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 SSPOV2 1 0 :1:6 
 `uc 1 WCOL2 1 0 :1:7 
 ]
-[u S1401 . 1 `S1381 1 . 1 0 `S1387 1 . 1 0 `S1392 1 . 1 0 ]
-[v _SSP2CON1bits SSP2CON1bits `VES1401  1 e 1 @3948 ]
+[u S880 . 1 `S860 1 . 1 0 `S866 1 . 1 0 `S871 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES880  1 e 1 @3948 ]
 "3796
 [v _SSP2STAT SSP2STAT `VEuc  1 e 1 @3949 ]
-[s S1085 . 1 `uc 1 . 1 0 :2:0 
+[s S560 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W 1 0 :1:2 
 ]
 "3931
-[s S1088 . 1 `uc 1 . 1 0 :5:0 
+[s S563 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A 1 0 :1:5 
 ]
-[s S1091 . 1 `uc 1 BF 1 0 :1:0 
+[s S566 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -286,38 +287,38 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 CKE 1 0 :1:6 
 `uc 1 SMP 1 0 :1:7 
 ]
-[s S1100 . 1 `uc 1 . 1 0 :2:0 
+[s S575 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S1105 . 1 `uc 1 . 1 0 :2:0 
+[s S580 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 A 1 0 :1:5 
 ]
-[s S1110 . 1 `uc 1 . 1 0 :2:0 
+[s S585 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S1115 . 1 `uc 1 . 1 0 :2:0 
+[s S590 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S1120 . 1 `uc 1 . 1 0 :2:0 
+[s S595 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_WRITE 1 0 :1:2 
 ]
-[s S1123 . 1 `uc 1 . 1 0 :5:0 
+[s S598 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_ADDRESS 1 0 :1:5 
 ]
-[s S1126 . 1 `uc 1 . 1 0 :2:0 
+[s S601 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S1131 . 1 `uc 1 BF2 1 0 :1:0 
+[s S606 . 1 `uc 1 BF2 1 0 :1:0 
 `uc 1 UA2 1 0 :1:1 
 `uc 1 I2C_READ2 1 0 :1:2 
 `uc 1 I2C_START2 1 0 :1:3 
@@ -326,70 +327,70 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 CKE2 1 0 :1:6 
 `uc 1 SMP2 1 0 :1:7 
 ]
-[s S1140 . 1 `uc 1 . 1 0 :2:0 
+[s S615 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE2 1 0 :1:2 
 `uc 1 S2 1 0 :1:3 
 `uc 1 P2 1 0 :1:4 
 `uc 1 DATA_ADDRESS2 1 0 :1:5 
 ]
-[s S1146 . 1 `uc 1 . 1 0 :2:0 
+[s S621 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW2 1 0 :1:2 
 `uc 1 START2 1 0 :1:3 
 `uc 1 STOP2 1 0 :1:4 
 `uc 1 D_A2 1 0 :1:5 
 ]
-[s S1152 . 1 `uc 1 . 1 0 :5:0 
+[s S627 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A2 1 0 :1:5 
 ]
-[s S1155 . 1 `uc 1 . 1 0 :2:0 
+[s S630 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W2 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_nA2 1 0 :1:5 
 ]
-[s S1160 . 1 `uc 1 . 1 0 :2:0 
+[s S635 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W2 1 0 :1:2 
 ]
-[s S1163 . 1 `uc 1 . 1 0 :2:0 
+[s S638 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_nW2 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 I2C_DAT2 1 0 :1:5 
 ]
-[s S1168 . 1 `uc 1 . 1 0 :2:0 
+[s S643 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_W2 1 0 :1:2 
 ]
-[s S1171 . 1 `uc 1 . 1 0 :5:0 
+[s S646 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_A2 1 0 :1:5 
 ]
-[s S1174 . 1 `uc 1 . 1 0 :2:0 
+[s S649 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW2 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA2 1 0 :1:5 
 ]
-[s S1179 . 1 `uc 1 . 1 0 :2:0 
+[s S654 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_WRITE2 1 0 :1:2 
 ]
-[s S1182 . 1 `uc 1 . 1 0 :5:0 
+[s S657 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_ADDRESS2 1 0 :1:5 
 ]
-[s S1185 . 1 `uc 1 . 1 0 :2:0 
+[s S660 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE2 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS2 1 0 :1:5 
 ]
-[u S1190 . 1 `S1085 1 . 1 0 `S1088 1 . 1 0 `S1091 1 . 1 0 `S1100 1 . 1 0 `S1105 1 . 1 0 `S1110 1 . 1 0 `S1115 1 . 1 0 `S1120 1 . 1 0 `S1123 1 . 1 0 `S1126 1 . 1 0 `S1131 1 . 1 0 `S1140 1 . 1 0 `S1146 1 . 1 0 `S1152 1 . 1 0 `S1155 1 . 1 0 `S1160 1 . 1 0 `S1163 1 . 1 0 `S1168 1 . 1 0 `S1171 1 . 1 0 `S1174 1 . 1 0 `S1179 1 . 1 0 `S1182 1 . 1 0 `S1185 1 . 1 0 ]
-[v _SSP2STATbits SSP2STATbits `VES1190  1 e 1 @3949 ]
+[u S665 . 1 `S560 1 . 1 0 `S563 1 . 1 0 `S566 1 . 1 0 `S575 1 . 1 0 `S580 1 . 1 0 `S585 1 . 1 0 `S590 1 . 1 0 `S595 1 . 1 0 `S598 1 . 1 0 `S601 1 . 1 0 `S606 1 . 1 0 `S615 1 . 1 0 `S621 1 . 1 0 `S627 1 . 1 0 `S630 1 . 1 0 `S635 1 . 1 0 `S638 1 . 1 0 `S643 1 . 1 0 `S646 1 . 1 0 `S649 1 . 1 0 `S654 1 . 1 0 `S657 1 . 1 0 `S660 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES665  1 e 1 @3949 ]
 "4196
 [v _SSP2ADD SSP2ADD `VEuc  1 e 1 @3950 ]
 "4266
 [v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3951 ]
-[s S849 . 1 `uc 1 TMR4IF 1 0 :1:0 
+[s S324 . 1 `uc 1 TMR4IF 1 0 :1:0 
 `uc 1 TMR5IF 1 0 :1:1 
 `uc 1 TMR6IF 1 0 :1:2 
 ]
 "6212
-[u S853 . 1 `S849 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES853  1 e 1 @3966 ]
-[s S311 . 1 `uc 1 RC0 1 0 :1:0 
+[u S328 . 1 `S324 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES328  1 e 1 @3966 ]
+[s S1477 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -399,7 +400,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 RC7 1 0 :1:7 
 ]
 "6905
-[s S320 . 1 `uc 1 T1OSO 1 0 :1:0 
+[s S1486 . 1 `uc 1 T1OSO 1 0 :1:0 
 `uc 1 T1OSI 1 0 :1:1 
 `uc 1 T5CKI 1 0 :1:2 
 `uc 1 SCK 1 0 :1:3 
@@ -408,7 +409,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 TX 1 0 :1:6 
 `uc 1 RX 1 0 :1:7 
 ]
-[s S329 . 1 `uc 1 P2B 1 0 :1:0 
+[s S1495 . 1 `uc 1 P2B 1 0 :1:0 
 `uc 1 P2A 1 0 :1:1 
 `uc 1 P1A 1 0 :1:2 
 `uc 1 SCL 1 0 :1:3 
@@ -417,7 +418,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 CK 1 0 :1:6 
 `uc 1 DT 1 0 :1:7 
 ]
-[s S338 . 1 `uc 1 T1CKI 1 0 :1:0 
+[s S1504 . 1 `uc 1 T1CKI 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 CCP1 1 0 :1:2 
 `uc 1 SCK1 1 0 :1:3 
@@ -426,7 +427,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 TX1 1 0 :1:6 
 `uc 1 RX1 1 0 :1:7 
 ]
-[s S347 . 1 `uc 1 T3CKI 1 0 :1:0 
+[s S1513 . 1 `uc 1 T3CKI 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 CTPLS 1 0 :1:2 
 `uc 1 SCL1 1 0 :1:3 
@@ -435,7 +436,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 CK1 1 0 :1:6 
 `uc 1 DT1 1 0 :1:7 
 ]
-[s S356 . 1 `uc 1 T3G 1 0 :1:0 
+[s S1522 . 1 `uc 1 T3G 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 AN14 1 0 :1:2 
 `uc 1 AN15 1 0 :1:3 
@@ -444,13 +445,13 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 AN18 1 0 :1:6 
 `uc 1 AN19 1 0 :1:7 
 ]
-[s S365 . 1 `uc 1 . 1 0 :1:0 
+[s S1531 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
-[u S369 . 1 `S311 1 . 1 0 `S320 1 . 1 0 `S329 1 . 1 0 `S338 1 . 1 0 `S347 1 . 1 0 `S356 1 . 1 0 `S365 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES369  1 e 1 @3970 ]
-[s S51 . 1 `uc 1 RD0 1 0 :1:0 
+[u S1535 . 1 `S1477 1 . 1 0 `S1486 1 . 1 0 `S1495 1 . 1 0 `S1504 1 . 1 0 `S1513 1 . 1 0 `S1522 1 . 1 0 `S1531 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1535  1 e 1 @3970 ]
+[s S1258 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -460,7 +461,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 RD7 1 0 :1:7 
 ]
 "7203
-[s S60 . 1 `uc 1 . 1 0 :2:0 
+[s S1267 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 P2B 1 0 :1:2 
 `uc 1 P2C 1 0 :1:3 
 `uc 1 P2D 1 0 :1:4 
@@ -468,16 +469,16 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 P1C 1 0 :1:6 
 `uc 1 P1D 1 0 :1:7 
 ]
-[s S68 . 1 `uc 1 . 1 0 :1:0 
+[s S1275 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP4 1 0 :1:1 
 `uc 1 . 1 0 :4:2 
 `uc 1 TX2 1 0 :1:6 
 `uc 1 RX2 1 0 :1:7 
 ]
-[s S74 . 1 `uc 1 . 1 0 :3:0 
+[s S1281 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_SS2 1 0 :1:3 
 ]
-[s S77 . 1 `uc 1 SCK2 1 0 :1:0 
+[s S1284 . 1 `uc 1 SCK2 1 0 :1:0 
 `uc 1 SDI2 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 nSS2 1 0 :1:3 
@@ -486,12 +487,12 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 CK2 1 0 :1:6 
 `uc 1 DT2 1 0 :1:7 
 ]
-[s S86 . 1 `uc 1 SCL2 1 0 :1:0 
+[s S1293 . 1 `uc 1 SCL2 1 0 :1:0 
 `uc 1 SDA2 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SS2 1 0 :1:3 
 ]
-[s S91 . 1 `uc 1 AN20 1 0 :1:0 
+[s S1298 . 1 `uc 1 AN20 1 0 :1:0 
 `uc 1 AN21 1 0 :1:1 
 `uc 1 AN22 1 0 :1:2 
 `uc 1 AN23 1 0 :1:3 
@@ -500,15 +501,15 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 AN26 1 0 :1:6 
 `uc 1 AN27 1 0 :1:7 
 ]
-[u S100 . 1 `S51 1 . 1 0 `S60 1 . 1 0 `S68 1 . 1 0 `S74 1 . 1 0 `S77 1 . 1 0 `S86 1 . 1 0 `S91 1 . 1 0 ]
-[v _PORTDbits PORTDbits `VES100  1 e 1 @3971 ]
+[u S1307 . 1 `S1258 1 . 1 0 `S1267 1 . 1 0 `S1275 1 . 1 0 `S1281 1 . 1 0 `S1284 1 . 1 0 `S1293 1 . 1 0 `S1298 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES1307  1 e 1 @3971 ]
 "7558
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "7670
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "7782
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S178 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1382 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -518,7 +519,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 LATC7 1 0 :1:7 
 ]
 "7809
-[s S187 . 1 `uc 1 LC0 1 0 :1:0 
+[s S1391 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 LC3 1 0 :1:3 
@@ -527,11 +528,11 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 LC6 1 0 :1:6 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S196 . 1 `S178 1 . 1 0 `S187 1 . 1 0 ]
-[v _LATCbits LATCbits `VES196  1 e 1 @3979 ]
+[u S1400 . 1 `S1382 1 . 1 0 `S1391 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1400  1 e 1 @3979 ]
 "7894
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S436 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S1602 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -541,7 +542,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 LATD7 1 0 :1:7 
 ]
 "7921
-[s S445 . 1 `uc 1 LD0 1 0 :1:0 
+[s S1611 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -550,8 +551,8 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 LD6 1 0 :1:6 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S454 . 1 `S436 1 . 1 0 `S445 1 . 1 0 ]
-[v _LATDbits LATDbits `VES454  1 e 1 @3980 ]
+[u S1620 . 1 `S1602 1 . 1 0 `S1611 1 . 1 0 ]
+[v _LATDbits LATDbits `VES1620  1 e 1 @3980 ]
 "8006
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
 "8058
@@ -566,7 +567,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 "9062
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
-[s S1473 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S951 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -575,14 +576,14 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 ADIF 1 0 :1:6 
 ]
 "9511
-[s S1481 . 1 `uc 1 . 1 0 :3:0 
+[s S959 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPIF 1 0 :1:3 
 `uc 1 TXIF 1 0 :1:4 
 `uc 1 RCIF 1 0 :1:5 
 ]
-[u S1486 . 1 `S1473 1 . 1 0 `S1481 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES1486  1 e 1 @3998 ]
-[s S1039 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+[u S964 . 1 `S951 1 . 1 0 `S959 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES964  1 e 1 @3998 ]
+[s S514 . 1 `uc 1 TMR1GIE 1 0 :1:0 
 `uc 1 TMR3GIE 1 0 :1:1 
 `uc 1 TMR5GIE 1 0 :1:2 
 `uc 1 CTMUIE 1 0 :1:3 
@@ -592,20 +593,20 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 SSP2IE 1 0 :1:7 
 ]
 "9931
-[s S1048 . 1 `uc 1 RXB0IE 1 0 :1:0 
+[s S523 . 1 `uc 1 RXB0IE 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
 `uc 1 TXB0IE 1 0 :1:2 
 `uc 1 TXB1IE 1 0 :1:3 
 `uc 1 TXB2IE 1 0 :1:4 
 ]
-[s S1054 . 1 `uc 1 . 1 0 :1:0 
+[s S529 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIE 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIE 1 0 :1:4 
 ]
-[u S1059 . 1 `S1039 1 . 1 0 `S1048 1 . 1 0 `S1054 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES1059  1 e 1 @4003 ]
-[s S1007 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+[u S534 . 1 `S514 1 . 1 0 `S523 1 . 1 0 `S529 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES534  1 e 1 @4003 ]
+[s S482 . 1 `uc 1 TMR1GIF 1 0 :1:0 
 `uc 1 TMR3GIF 1 0 :1:1 
 `uc 1 TMR5GIF 1 0 :1:2 
 `uc 1 CTMUIF 1 0 :1:3 
@@ -615,16 +616,16 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 SSP2IF 1 0 :1:7 
 ]
 "10034
-[s S1016 . 1 `uc 1 . 1 0 :1:0 
+[s S491 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIF 1 0 :1:4 
 ]
-[u S1021 . 1 `S1007 1 . 1 0 `S1016 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1021  1 e 1 @4004 ]
+[u S496 . 1 `S482 1 . 1 0 `S491 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES496  1 e 1 @4004 ]
 "10343
 [v _RCSTA1 RCSTA1 `VEuc  1 e 1 @4011 ]
-[s S1503 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S981 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -634,10 +635,10 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 SPEN 1 0 :1:7 
 ]
 "10396
-[s S1512 . 1 `uc 1 . 1 0 :3:0 
+[s S990 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADEN 1 0 :1:3 
 ]
-[s S1515 . 1 `uc 1 RX9D1 1 0 :1:0 
+[s S993 . 1 `uc 1 RX9D1 1 0 :1:0 
 `uc 1 OERR1 1 0 :1:1 
 `uc 1 FERR1 1 0 :1:2 
 `uc 1 ADDEN1 1 0 :1:3 
@@ -646,18 +647,18 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 RX91 1 0 :1:6 
 `uc 1 SPEN1 1 0 :1:7 
 ]
-[s S1524 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S1002 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S1528 . 1 `uc 1 . 1 0 :6:0 
+[s S1006 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S1531 . 1 `uc 1 . 1 0 :5:0 
+[s S1009 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[u S1534 . 1 `S1503 1 . 1 0 `S1512 1 . 1 0 `S1515 1 . 1 0 `S1524 1 . 1 0 `S1528 1 . 1 0 `S1531 1 . 1 0 ]
-[v _RCSTA1bits RCSTA1bits `VES1534  1 e 1 @4011 ]
+[u S1012 . 1 `S981 1 . 1 0 `S990 1 . 1 0 `S993 1 . 1 0 `S1002 1 . 1 0 `S1006 1 . 1 0 `S1009 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES1012  1 e 1 @4011 ]
 "10799
 [v _TXSTA1 TXSTA1 `VEuc  1 e 1 @4012 ]
 "11174
@@ -676,15 +677,15 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "13575
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S595 . 1 `uc 1 . 1 0 :1:0 
+[s S35 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "13620
-[s S598 . 1 `uc 1 ADON 1 0 :1:0 
+[s S38 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S602 . 1 `uc 1 . 1 0 :1:0 
+[s S42 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -692,43 +693,43 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-[s S610 . 1 `uc 1 . 1 0 :1:0 
+[s S50 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S613 . 1 `uc 1 . 1 0 :1:0 
+[s S53 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S616 . 1 `uc 1 . 1 0 :1:0 
+[s S56 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S619 . 1 `uc 1 . 1 0 :1:0 
+[s S59 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[s S622 . 1 `uc 1 . 1 0 :1:0 
+[s S62 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-[u S625 . 1 `S595 1 . 1 0 `S598 1 . 1 0 `S602 1 . 1 0 `S610 1 . 1 0 `S613 1 . 1 0 `S616 1 . 1 0 `S619 1 . 1 0 `S622 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES625  1 e 1 @4034 ]
+[u S65 . 1 `S35 1 . 1 0 `S38 1 . 1 0 `S42 1 . 1 0 `S50 1 . 1 0 `S53 1 . 1 0 `S56 1 . 1 0 `S59 1 . 1 0 `S62 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES65  1 e 1 @4034 ]
 "13707
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
 "13727
 [v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
-[s S1599 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+[s S1077 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
 "15835
-[s S1601 . 1 `uc 1 . 1 0 :1:0 
+[s S1079 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
-[s S1604 . 1 `uc 1 . 1 0 :2:0 
+[s S1082 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
-[s S1607 . 1 `uc 1 . 1 0 :3:0 
+[s S1085 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
-[s S1610 . 1 `uc 1 . 1 0 :4:0 
+[s S1088 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
-[s S1613 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S1091 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
 `uc 1 nTO 1 0 :1:3 
@@ -737,21 +738,21 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 SBOREN 1 0 :1:6 
 `uc 1 IPEN 1 0 :1:7 
 ]
-[s S1622 . 1 `uc 1 BOR 1 0 :1:0 
+[s S1100 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
 `uc 1 TO 1 0 :1:3 
 `uc 1 RI 1 0 :1:4 
 ]
-[u S1628 . 1 `S1599 1 . 1 0 `S1601 1 . 1 0 `S1604 1 . 1 0 `S1607 1 . 1 0 `S1610 1 . 1 0 `S1613 1 . 1 0 `S1622 1 . 1 0 ]
-[v _RCONbits RCONbits `VES1628  1 e 1 @4048 ]
+[u S1106 . 1 `S1077 1 . 1 0 `S1079 1 . 1 0 `S1082 1 . 1 0 `S1085 1 . 1 0 `S1088 1 . 1 0 `S1091 1 . 1 0 `S1100 1 . 1 0 ]
+[v _RCONbits RCONbits `VES1106  1 e 1 @4048 ]
 "15953
 [v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
 "16010
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
 "16093
 [v _T0CON T0CON `VEuc  1 e 1 @4053 ]
-[s S794 . 1 `uc 1 T0PS 1 0 :3:0 
+[s S269 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -759,21 +760,21 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 TMR0ON 1 0 :1:7 
 ]
 "16113
-[s S801 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S276 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 ]
-[u S805 . 1 `S794 1 . 1 0 `S801 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES805  1 e 1 @4053 ]
+[u S280 . 1 `S269 1 . 1 0 `S276 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES280  1 e 1 @4053 ]
 "16170
 [v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
 "16190
 [v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
-[s S715 . 1 `uc 1 . 1 0 :7:0 
+[s S168 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "16845
-[s S718 . 1 `uc 1 RBIP 1 0 :1:0 
+[s S171 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -782,12 +783,12 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S727 . 1 `uc 1 . 1 0 :7:0 
+[s S180 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 RBPU 1 0 :1:7 
 ]
-[u S730 . 1 `S715 1 . 1 0 `S718 1 . 1 0 `S727 1 . 1 0 ]
-[v _INTCON2bits INTCON2bits `VES730  1 e 1 @4081 ]
-[s S241 . 1 `uc 1 RBIF 1 0 :1:0 
+[u S183 . 1 `S168 1 . 1 0 `S171 1 . 1 0 `S180 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES183  1 e 1 @4081 ]
+[s S216 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -797,7 +798,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "16922
-[s S250 . 1 `uc 1 . 1 0 :1:0 
+[s S225 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -806,53 +807,55 @@ I2C2_SLAVE_READ_COMPLETED 3
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S259 . 1 `uc 1 . 1 0 :6:0 
+[s S234 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S263 . 1 `S241 1 . 1 0 `S250 1 . 1 0 `S259 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES263  1 e 1 @4082 ]
-"354 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\doprnt.c
+[u S238 . 1 `S216 1 . 1 0 `S225 1 . 1 0 `S234 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES238  1 e 1 @4082 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
 "362
 [v _hexpowers hexpowers `C[8]ul  1 s 32 hexpowers ]
-[s S28 pi_power_ctrl_s 8 `E7261 1 state 1 0 `E7261 1 prev 1 1 `ui 1 count 2 2 `ui 1 stopped_count 2 4 `uc 1 running 1 6 `uc 1 power_switch 1 7 ]
-"55 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
-[v _pi_power pi_power `S28  1 e 8 0 ]
-"57
-[v _reg_status reg_status `uc  1 e 1 0 ]
+[s S1247 pi_power_ctrl_s 8 `E7259 1 state 1 0 `E7259 1 prev 1 1 `ui 1 count 2 2 `ui 1 stopped_count 2 4 `uc 1 running 1 6 `uc 1 power_switch 1 7 ]
+"54 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+[v _pi_power pi_power `S1247  1 e 8 0 ]
 "58
+[v _led_pattern_tbl led_pattern_tbl `[6][16]uc  1 e 96 0 ]
+"67
+[v _reg_status reg_status `uc  1 e 1 0 ]
+"68
 [v _reg_control reg_control `uc  1 e 1 0 ]
-"59
+"69
 [v _led_color led_color `ul  1 e 4 0 ]
-"60
+"70
 [v _prev_color prev_color `ul  1 e 4 0 ]
-"61
+"71
 [v _meas_tune meas_tune `ui  1 e 2 0 ]
-"62
+"72
 [v _meas_band meas_band `ui  1 e 2 0 ]
-"63
+"73
 [v _meas_vol meas_vol `ui  1 e 2 0 ]
+"74
+[v _led_pattern_idx led_pattern_idx `uc  1 e 1 0 ]
 "62 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\mcc_generated_files/i2c2.c
 [v _I2C2_slaveWriteData I2C2_slaveWriteData `VEuc  1 e 1 0 ]
 "58 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\mcc_generated_files/tmr0.c
 [v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
 "56 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\mcc_generated_files/tmr5.c
 [v _timer5ReloadVal timer5ReloadVal `VEui  1 e 2 0 ]
-"65 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+"76 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"68
+"79
 [v main@meas_pi3v meas_pi3v `ui  1 a 2 6 ]
-"67
+"78
 [v main@meas_pi5v meas_pi5v `ui  1 a 2 4 ]
-"70
+"81
 [v main@pi5v pi5v `ui  1 a 2 2 ]
-"69
+"80
 [v main@pi3v pi3v `ui  1 a 2 0 ]
-"71
-[v main@led_counter led_counter `uc  1 a 1 8 ]
-"435
+"453
 } 0
 "7 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\ws2812.c
 [v _ws2812_send ws2812_send `(v  1 e 1 0 ]
@@ -863,22 +866,22 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v ws2812_send@led led `ul  1 p 4 20 ]
 "49
 } 0
-"437 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+"455 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
 [v _update_status_reg update_status_reg `(v  1 e 1 0 ]
-{
-"458
-} 0
-"478
-[v _request_pi_stop request_pi_stop `(v  1 e 1 0 ]
-{
-"482
-} 0
-"472
-[v _request_pi_run request_pi_run `(v  1 e 1 0 ]
 {
 "476
 } 0
-"464 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\doprnt.c
+"496
+[v _request_pi_stop request_pi_stop `(v  1 e 1 0 ]
+{
+"500
+} 0
+"490
+[v _request_pi_run request_pi_run `(v  1 e 1 0 ]
+{
+"494
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "1500
@@ -916,7 +919,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v EUSART1_Write@txData txData `uc  1 a 1 20 ]
 "103
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\isdigit.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
 [v _isdigit isdigit `(b  1 e 0 0 ]
 {
 [v isdigit@c c `uc  1 a 1 wreg ]
@@ -925,7 +928,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v isdigit@c c `uc  1 a 1 22 ]
 "15
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -935,7 +938,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 22 ]
 "53
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\llmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
 {
 "11
@@ -945,7 +948,7 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v ___llmod@divisor divisor `ul  1 p 4 37 ]
 "26
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "11
@@ -957,17 +960,17 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v ___lldiv@divisor divisor `ul  1 p 4 24 ]
 "31
 } 0
-"466 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+"484 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
 [v _pi_supply_on pi_supply_on `(v  1 e 1 0 ]
 {
-"470
+"488
 } 0
-"460
+"478
 [v _pi_supply_off pi_supply_off `(v  1 e 1 0 ]
 {
-"464
+"482
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -1068,16 +1071,16 @@ I2C2_SLAVE_READ_COMPLETED 3
 [v I2C2_ISR@i2c_data i2c_data `uc  1 a 1 1 ]
 "144
 } 0
-"530 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
+"548 C:\Users\IFX-radar\Documents\Projects\PiRadio\Software\Microchip\PiRadio.X\main.c
 [v _I2C2_StatusCallback I2C2_StatusCallback `(v  1 e 1 0 ]
 {
 [v I2C2_StatusCallback@i2c_bus_state i2c_bus_state `E7163  1 a 1 wreg ]
 [v I2C2_StatusCallback@i2c_bus_state i2c_bus_state `E7163  1 a 1 wreg ]
-"532
+"550
 [v I2C2_StatusCallback@RegAddress RegAddress `uc  1 s 1 RegAddress ]
-"533
+"551
 [v I2C2_StatusCallback@slaveWriteType slaveWriteType `uc  1 s 1 slaveWriteType ]
-"530
+"548
 [v I2C2_StatusCallback@i2c_bus_state i2c_bus_state `E7163  1 a 1 0 ]
-"594
+"612
 } 0

@@ -40,9 +40,8 @@ void request_pi_run(void);
 void request_pi_stop(void);
 void myI2CStatusCallback(I2C2_SLAVE_DRIVER_STATUS i2c_bus_state);
 
-void myTimer4ISR(void);
-
-typedef enum {RESET = 0, STANDBY, BOOTING, OPERATE, SHUTDOWN, PI_CONTROL} state_t;
+typedef enum {RESET=0, STANDBY=1, BOOTING=2, OPERATE=3, SHUTDOWN=4, 
+        PI_CONTROL=5, MAX_STATES} state_t;
 
 struct pi_power_ctrl_s
 {
@@ -54,6 +53,17 @@ struct pi_power_ctrl_s
     uint8_t power_switch;
 } pi_power;
 
+#define LED_PAT_DEPTH (16u)
+
+uint8_t led_pattern_tbl[MAX_STATES][LED_PAT_DEPTH] = {
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},  // RESET
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},  // STANDBY
+    {0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1},  // BOOTING
+    {0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1},  // OPERATE
+    {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1},  // SHUTDOWN
+    {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}   // PI_CONTROL
+};
+
    uint8_t  reg_status = 0;
    uint8_t  reg_control = 0;
    uint32_t led_color = WS2812_OFF;
@@ -61,6 +71,7 @@ struct pi_power_ctrl_s
    uint16_t meas_tune = 0;
    uint16_t meas_band = 0;
    uint16_t meas_vol = 0;
+   uint8_t  led_pattern_idx = 0;
 
 void main()
 {
@@ -68,7 +79,6 @@ void main()
    uint16_t meas_pi3v = 0;
    uint16_t pi3v;
    uint16_t pi5v;
-   uint8_t  led_counter = 0;
 
    /* initialize the oscillator, gpio, interrupts, ADC, timers */
    SYSTEM_Initialize();
@@ -77,7 +87,7 @@ void main()
    pi_power.state = RESET;
 
    /* clear the LED counter */
-   led_counter = 0;
+   led_pattern_idx = 0;
 
    /* bigass loop */
    while (1)
@@ -417,11 +427,19 @@ void main()
       /*  EVERYTHING BELOW TAKES PLACE OUTSIDE OF TIMING LOOP */
       /********************************************************/
 
-      /* toggle status LED every five trips through main loop */
-      if (led_counter++ >= 4)
+      /* update status LED */
+      if (led_pattern_idx++ >= LED_PAT_DEPTH)
       {
-         Q_LED_Toggle();
-         led_counter = 0;
+         led_pattern_idx = 0;
+      }
+      
+      if (led_pattern_tbl[pi_power.state][led_pattern_idx] == 0)
+      {
+          Q_LED_SetLow();
+      }
+      else
+      {
+          Q_LED_SetHigh();
       }
 
       /* Check for filament activity on T0CKI on the outside of timing loop
