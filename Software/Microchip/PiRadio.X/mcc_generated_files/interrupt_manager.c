@@ -61,10 +61,6 @@ void interrupt INTERRUPT_InterruptManager (void)
     {
         I2C2_ISR();
     }
-    else
-    {
-        //Unhandled Interrupt
-    }
 }
 /**
  End of File

@@ -11,6 +11,7 @@
 #define VERSION_MAJ 0
 #define VERSION_MIN 1
 
+#define _XTAL_FREQ 16000000
 #define USE_AND_MASKS
 
 #include <stdio.h>
@@ -24,6 +25,7 @@
 #define FALSE (0)
 
 #define STREAM_STATE_INFO (TRUE)
+#define NEOPIXEL_TEST (TRUE)
 
 #ifndef SLAVE_WRITE_DATA_TYPE
 typedef enum
@@ -53,16 +55,21 @@ struct pi_power_ctrl_s
     uint8_t power_switch;
 } pi_power;
 
-#define LED_PAT_DEPTH (16u)
 
-uint8_t led_pattern_tbl[MAX_STATES][LED_PAT_DEPTH] = {
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},  // RESET
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},  // STANDBY
-    {0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1},  // BOOTING
-    {0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1},  // OPERATE
-    {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1},  // SHUTDOWN
-    {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}   // PI_CONTROL
+#define NUM_STATUS_DEPTH (12)
+   uint8_t led_pattern_tbl[MAX_STATES][NUM_STATUS_DEPTH] = {
+        {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255},
+        {255, 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  },
+        {255, 255, 255, 0  , 0  , 0  , 255, 255, 255, 0  , 0  , 0  },    
+        {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255},
+        {0  , 255, 255, 255, 255, 255, 0  , 255, 255, 255, 255, 255},
+        {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255}
 };
+    
+   uint32_t color_test_table[8] = {
+       WS2812_RED, WS2812_ORANGE, WS2812_YELLOW, WS2812_GREEN,  
+        WS2812_BLUE, WS2812_VIOLET, WS2812_TEAL, WS2812_WHITE 
+   };
 
    uint8_t  reg_status = 0;
    uint8_t  reg_control = 0;
@@ -340,6 +347,8 @@ void main()
          /* initialize STATUS and CONTROL registers */
          reg_status = 0;
          reg_control = 0;
+         
+         printf("\n\n\r!RESET!\n\n\r");
 
       } // if (RESET == state)
 
@@ -376,6 +385,13 @@ void main()
       /* END OF ANALOG CONTROLLER CONVERSION */
       /***************************************/
 
+      /* override pixel color during testing */
+      if (NEOPIXEL_TEST) 
+      {
+          led_color = (uint32_t)meas_tune << 4;
+          prev_color = led_color + 1u;
+      }
+      
       /* display status information to console */
       if ( STREAM_STATE_INFO )
       {
@@ -428,7 +444,7 @@ void main()
       /********************************************************/
 
       /* update status LED */
-      if (led_pattern_idx++ >= LED_PAT_DEPTH)
+      if (++led_pattern_idx >= NUM_STATUS_DEPTH)
       {
          led_pattern_idx = 0;
       }

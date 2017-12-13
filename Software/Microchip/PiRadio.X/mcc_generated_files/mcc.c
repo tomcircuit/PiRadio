@@ -115,8 +115,16 @@ void SYSTEM_Initialize(void)
     EUSART1_Initialize();
 }
 
-/* NOTE: following does not seem to work! CPU clock stuck at 16 MHz
-   TJL 12/12/2017 */
+void OSCILLATOR_Initialize(void)
+{
+    // SCS FOSC; IRCF 16MHz_HFINTOSC; IDLEN disabled; 
+    OSCCON = 0x70;
+    // PRISD enabled; SOSCGO disabled; MFIOSEL disabled; 
+    OSCCON2 = 0x04;
+    // INTSRC disabled; PLLEN disabled; TUN 0; 
+    OSCTUNE = 0x00;
+}
+
 void OSCILLATOR_FastClock(void)
 {
     // SCS FOSC; IRCF 16MHz_HFINTOSC; IDLEN disabled; 
@@ -127,15 +135,6 @@ void OSCILLATOR_FastClock(void)
     OSCTUNE = 0x40;
 }
 
-void OSCILLATOR_Initialize(void)
-{
-    // SCS FOSC; IRCF 16MHz_HFINTOSC; IDLEN disabled; 
-    OSCCON = 0x70;
-    // PRISD enabled; SOSCGO disabled; MFIOSEL disabled; 
-    OSCCON2 = 0x04;
-    // INTSRC disabled; PLLEN disabled; TUN 0; 
-    OSCTUNE = 0x00;
-}
 
 
 /**

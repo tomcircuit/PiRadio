@@ -1,8 +1,8 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"54 main.c
+"56 main.c
 [c E7259 0 1 2 3 4 5 6 .. ]
 [n E7259 . RESET STANDBY BOOTING OPERATE SHUTDOWN PI_CONTROL MAX_STATES  ]
-"46
+"48
 [s S852 `E7259 1 `E7259 1 `ui 1 `ui 1 `uc 1 `uc 1 ]
 [n S852 pi_power_ctrl_s state prev count stopped_count running power_switch ]
 [p mainexit ]
@@ -14,7 +14,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR5_Initialize `(v ~T0 @X0 0 ef ]
 "99 mcc_generated_files/tmr0.h
 [v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
-"7146 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"7146 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [s S363 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S363 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
 "7156
@@ -40,17 +40,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S362 . . . . . . . . ]
 "7203
 [v _PORTDbits `VS362 ~T0 @X0 0 e@3971 ]
-"37 main.c
+"39 main.c
 [v _pi_supply_off `(v ~T0 @X0 0 ef ]
-"40
+"42
 [v _request_pi_stop `(v ~T0 @X0 0 ef ]
-"38
+"40
 [v _pi_supply_on `(v ~T0 @X0 0 ef ]
-"39
+"41
 [v _request_pi_run `(v ~T0 @X0 0 ef ]
 "282 mcc_generated_files/pin_manager.h
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"7788 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"7788 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [s S386 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S386 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
 "7798
@@ -61,16 +61,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S385 . . . ]
 "7809
 [v _LATCbits `VS385 ~T0 @X0 0 e@3979 ]
+"195 D:\Program Files\Microchip\xc8\v1.44\include\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
 "139 mcc_generated_files/adc.h
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
-"361 main.c
-[c E7193 0 1 2 15 25 29 30 31 .. ]
-[n E7193 . channel_TUNE channel_BAND channel_VOL channel_PI5V channel_PI3V channel_CTMU channel_DAC channel_FVRBuf2  ]
+"370 main.c
+[c E7199 0 1 2 15 25 29 30 31 .. ]
+[n E7199 . channel_TUNE channel_BAND channel_VOL channel_PI5V channel_PI3V channel_CTMU channel_DAC channel_FVRBuf2  ]
 "291 mcc_generated_files/adc.h
-[v _ADC_GetConversion `(ui ~T0 @X0 0 ef1`E7193 ]
-"195 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"16896 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+[v _ADC_GetConversion `(ui ~T0 @X0 0 ef1`E7199 ]
+"16896 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [s S823 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S823 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "16906
@@ -84,7 +84,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S822 . . . . ]
 "16922
 [v _INTCONbits `VS822 ~T0 @X0 0 e@4082 ]
-"100 mcc_generated_files/mcc.h
+"99 mcc_generated_files/mcc.h
 [v _OSCILLATOR_FastClock `(v ~T0 @X0 0 ef ]
 "21 ws2812.h
 [v _ws2812_send `(v ~T0 @X0 0 ef1`ul ]
@@ -92,9 +92,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR5_HasOverflowOccured `(uc ~T0 @X0 0 ef ]
 "309 mcc_generated_files/tmr0.h
 [v _TMR0_HasOverflowOccured `(uc ~T0 @X0 0 ef ]
-"36 main.c
+"38 main.c
 [v _update_status_reg `(v ~T0 @X0 0 ef ]
-"6839 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"6839 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [s S355 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S355 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
 "6849
@@ -131,15 +131,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S388 . . . ]
 "7921
 [v _LATDbits `VS388 ~T0 @X0 0 e@3980 ]
-"549 main.c
-[c E7163 0 1 2 3 .. ]
-[n E7163 . I2C2_SLAVE_WRITE_REQUEST I2C2_SLAVE_READ_REQUEST I2C2_SLAVE_WRITE_COMPLETED I2C2_SLAVE_READ_COMPLETED  ]
-"551
+"565 main.c
+[c E7169 0 1 2 3 .. ]
+[n E7169 . I2C2_SLAVE_WRITE_REQUEST I2C2_SLAVE_READ_REQUEST I2C2_SLAVE_WRITE_COMPLETED I2C2_SLAVE_READ_COMPLETED  ]
+"567
 [c E7243 0 1 .. ]
 [n E7243 . SLAVE_NORMAL_DATA SLAVE_DATA_ADDRESS  ]
 "140 mcc_generated_files/i2c2.h
 [v _I2C2_slaveWriteData `Vuc ~T0 @X0 0 e ]
-"4266 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"4266 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [v _SSP2BUF `Vuc ~T0 @X0 0 e@3951 ]
 [; ;__size_t.h: 4: typedef unsigned size_t;
 [; ;stdarg.h: 7: typedef void * va_list[1];
@@ -254,7 +254,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;pic18f44k22.h: 50: extern volatile unsigned char ANSELA @ 0xF38;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"52 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [; ;pic18f44k22.h: 52: asm("ANSELA equ 0F38h");
 [; <" ANSELA equ 0F38h ;# ">
 [; ;pic18f44k22.h: 55: typedef union {
@@ -6802,6 +6802,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;interrupt_manager.h: 110: void interrupt INTERRUPT_InterruptManager(void);
 [; ;interrupt_manager.h: 122: void INTERRUPT_Initialize (void);
+[; ;eusart1.h: 95: void EUSART1_Initialize(void);
+[; ;eusart1.h: 115: uint8_t EUSART1_Read(void);
+[; ;eusart1.h: 135: void EUSART1_Write(uint8_t txData);
 [; ;stddef.h: 6: typedef int ptrdiff_t;
 [; ;i2c2.h: 78: typedef enum
 [; ;i2c2.h: 79: {
@@ -6843,9 +6846,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;adc.h: 228: bool ADC_IsConversionDone();
 [; ;adc.h: 261: adc_result_t ADC_GetConversionResult(void);
 [; ;adc.h: 291: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[; ;eusart1.h: 95: void EUSART1_Initialize(void);
-[; ;eusart1.h: 115: uint8_t EUSART1_Read(void);
-[; ;eusart1.h: 135: void EUSART1_Write(uint8_t txData);
 [; ;tmr5.h: 93: void TMR5_Initialize(void);
 [; ;tmr5.h: 124: void TMR5_StartTimer(void);
 [; ;tmr5.h: 154: void TMR5_StopTimer(void);
@@ -6857,95 +6857,54 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr5.h: 366: bool TMR5_HasOverflowOccured(void);
 [; ;mcc.h: 73: void SYSTEM_Initialize(void);
 [; ;mcc.h: 86: void OSCILLATOR_Initialize(void);
-[; ;mcc.h: 100: void OSCILLATOR_FastClock(void);
-[; ;main.c: 29: typedef enum
-[; ;main.c: 30: {
-[; ;main.c: 31: SLAVE_NORMAL_DATA,
-[; ;main.c: 32: SLAVE_DATA_ADDRESS,
-[; ;main.c: 33: } SLAVE_WRITE_DATA_TYPE;
-[; ;main.c: 36: void update_status_reg(void);
-[; ;main.c: 37: void pi_supply_off(void);
-[; ;main.c: 38: void pi_supply_on(void);
-[; ;main.c: 39: void request_pi_run(void);
-[; ;main.c: 40: void request_pi_stop(void);
-[; ;main.c: 41: void myI2CStatusCallback(I2C2_SLAVE_DRIVER_STATUS i2c_bus_state);
-[; ;main.c: 43: typedef enum {RESET=0, STANDBY=1, BOOTING=2, OPERATE=3, SHUTDOWN=4,
-[; ;main.c: 44: PI_CONTROL=5, MAX_STATES} state_t;
-"54 main.c
+[; ;mcc.h: 99: void OSCILLATOR_FastClock(void);
+[; ;main.c: 31: typedef enum
+[; ;main.c: 32: {
+[; ;main.c: 33: SLAVE_NORMAL_DATA,
+[; ;main.c: 34: SLAVE_DATA_ADDRESS,
+[; ;main.c: 35: } SLAVE_WRITE_DATA_TYPE;
+[; ;main.c: 38: void update_status_reg(void);
+[; ;main.c: 39: void pi_supply_off(void);
+[; ;main.c: 40: void pi_supply_on(void);
+[; ;main.c: 41: void request_pi_run(void);
+[; ;main.c: 42: void request_pi_stop(void);
+[; ;main.c: 43: void myI2CStatusCallback(I2C2_SLAVE_DRIVER_STATUS i2c_bus_state);
+[; ;main.c: 45: typedef enum {RESET=0, STANDBY=1, BOOTING=2, OPERATE=3, SHUTDOWN=4,
+[; ;main.c: 46: PI_CONTROL=5, MAX_STATES} state_t;
+"56 main.c
 [v _pi_power `S852 ~T0 @X0 1 e ]
-[; ;main.c: 46: struct pi_power_ctrl_s
-[; ;main.c: 47: {
-[; ;main.c: 48: state_t state;
-[; ;main.c: 49: state_t prev;
-[; ;main.c: 50: uint16_t count;
-[; ;main.c: 51: uint16_t stopped_count;
-[; ;main.c: 52: uint8_t running;
-[; ;main.c: 53: uint8_t power_switch;
-[; ;main.c: 54: } pi_power;
-[v F7277 `uc ~T0 @X0 -> 16 `ui t ]
-"58
+[; ;main.c: 48: struct pi_power_ctrl_s
+[; ;main.c: 49: {
+[; ;main.c: 50: state_t state;
+[; ;main.c: 51: state_t prev;
+[; ;main.c: 52: uint16_t count;
+[; ;main.c: 53: uint16_t stopped_count;
+[; ;main.c: 54: uint8_t running;
+[; ;main.c: 55: uint8_t power_switch;
+[; ;main.c: 56: } pi_power;
+[v F7277 `uc ~T0 @X0 -> 12 `i t ]
+"60
 [v _led_pattern_tbl `F7277 ~T0 @X0 . `E7259 6 e ]
 [i _led_pattern_tbl
 :U ..
 :U ..
-"59
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-..
-:U ..
-"60
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
-..
-:U ..
 "61
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
 ..
 :U ..
 "62
+-> -> 255 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
@@ -6954,995 +6913,1053 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
 ..
 :U ..
 "63
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
 ..
 :U ..
 "64
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
--> -> 1 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+..
+:U ..
+"65
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 0 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+..
+:U ..
+"66
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
 ..
 ..
 ]
-[; ;main.c: 58: uint8_t led_pattern_tbl[MAX_STATES][(16u)] = {
-[; ;main.c: 59: {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-[; ;main.c: 60: {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-[; ;main.c: 61: {0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1},
-[; ;main.c: 62: {0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1},
-[; ;main.c: 63: {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1},
-[; ;main.c: 64: {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
-[; ;main.c: 65: };
-"67
+[; ;main.c: 60: uint8_t led_pattern_tbl[MAX_STATES][(12)] = {
+[; ;main.c: 61: {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255},
+[; ;main.c: 62: {255, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 },
+[; ;main.c: 63: {255, 255, 255, 0 , 0 , 0 , 255, 255, 255, 0 , 0 , 0 },
+[; ;main.c: 64: {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255},
+[; ;main.c: 65: {0 , 255, 255, 255, 255, 255, 0 , 255, 255, 255, 255, 255},
+[; ;main.c: 66: {255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255}
+[; ;main.c: 67: };
+"69
+[v _color_test_table `ul ~T0 @X0 -> 8 `i e ]
+[i _color_test_table
+:U ..
+"70
+-> -> -> 252 `i `l `ul
+-> -> 51428 `ui `ul
+-> -> 59624 `ui `ul
+-> -> 63488 `ui `ul
+"71
+-> -> 16252928 `l `ul
+-> -> 16253168 `l `ul
+-> -> 16316640 `l `ul
+"72
+-> -> 16316664 `l `ul
+..
+]
+[; ;main.c: 69: uint32_t color_test_table[8] = {
+[; ;main.c: 70: (0x000000fc), (0x0000c8e4), (0x0000e8e8), (0x0000f800),
+[; ;main.c: 71: (0x00f80000), (0x00f800f0), (0x00f8f8e0), (0x00f8f8f8)
+[; ;main.c: 72: };
+"74
 [v _reg_status `uc ~T0 @X0 1 e ]
 [i _reg_status
 -> -> 0 `i `uc
 ]
-[; ;main.c: 67: uint8_t reg_status = 0;
-"68
+[; ;main.c: 74: uint8_t reg_status = 0;
+"75
 [v _reg_control `uc ~T0 @X0 1 e ]
 [i _reg_control
 -> -> 0 `i `uc
 ]
-[; ;main.c: 68: uint8_t reg_control = 0;
-"69
+[; ;main.c: 75: uint8_t reg_control = 0;
+"76
 [v _led_color `ul ~T0 @X0 1 e ]
 [i _led_color
 -> -> -> 0 `i `l `ul
 ]
-[; ;main.c: 69: uint32_t led_color = (0);
-"70
+[; ;main.c: 76: uint32_t led_color = (0);
+"77
 [v _prev_color `ul ~T0 @X0 1 e ]
 [i _prev_color
 -> -> + -> 0 `i -> 1 `i `l `ul
 ]
-[; ;main.c: 70: uint32_t prev_color = (0)+1;
-"71
+[; ;main.c: 77: uint32_t prev_color = (0)+1;
+"78
 [v _meas_tune `ui ~T0 @X0 1 e ]
 [i _meas_tune
 -> -> 0 `i `ui
 ]
-[; ;main.c: 71: uint16_t meas_tune = 0;
-"72
+[; ;main.c: 78: uint16_t meas_tune = 0;
+"79
 [v _meas_band `ui ~T0 @X0 1 e ]
 [i _meas_band
 -> -> 0 `i `ui
 ]
-[; ;main.c: 72: uint16_t meas_band = 0;
-"73
+[; ;main.c: 79: uint16_t meas_band = 0;
+"80
 [v _meas_vol `ui ~T0 @X0 1 e ]
 [i _meas_vol
 -> -> 0 `i `ui
 ]
-[; ;main.c: 73: uint16_t meas_vol = 0;
-"74
+[; ;main.c: 80: uint16_t meas_vol = 0;
+"81
 [v _led_pattern_idx `uc ~T0 @X0 1 e ]
 [i _led_pattern_idx
 -> -> 0 `i `uc
 ]
-[; ;main.c: 74: uint8_t led_pattern_idx = 0;
+[; ;main.c: 81: uint8_t led_pattern_idx = 0;
 [v $root$_main `(v ~T0 @X0 0 e ]
-"76
+"83
 [v _main `(v ~T0 @X0 1 ef ]
-"77
+"84
 {
-[; ;main.c: 76: void main()
-[; ;main.c: 77: {
+[; ;main.c: 83: void main()
+[; ;main.c: 84: {
 [e :U _main ]
 [f ]
-"78
+"85
 [v _meas_pi5v `ui ~T0 @X0 1 a ]
-[; ;main.c: 78: uint16_t meas_pi5v = 0;
+[; ;main.c: 85: uint16_t meas_pi5v = 0;
 [e = _meas_pi5v -> -> 0 `i `ui ]
-"79
+"86
 [v _meas_pi3v `ui ~T0 @X0 1 a ]
-[; ;main.c: 79: uint16_t meas_pi3v = 0;
+[; ;main.c: 86: uint16_t meas_pi3v = 0;
 [e = _meas_pi3v -> -> 0 `i `ui ]
-"80
-[v _pi3v `ui ~T0 @X0 1 a ]
-"81
-[v _pi5v `ui ~T0 @X0 1 a ]
-[; ;main.c: 80: uint16_t pi3v;
-[; ;main.c: 81: uint16_t pi5v;
-[; ;main.c: 84: SYSTEM_Initialize();
-"84
-[e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 87: pi_power.state = RESET;
 "87
-[e = . _pi_power 0 . `E7259 0 ]
-[; ;main.c: 90: led_pattern_idx = 0;
-"90
-[e = _led_pattern_idx -> -> 0 `i `uc ]
-[; ;main.c: 93: while (1)
-"93
-[e :U 855 ]
-[; ;main.c: 94: {
+[v _pi3v `ui ~T0 @X0 1 a ]
+"88
+[v _pi5v `ui ~T0 @X0 1 a ]
+[; ;main.c: 87: uint16_t pi3v;
+[; ;main.c: 88: uint16_t pi5v;
+[; ;main.c: 91: SYSTEM_Initialize();
+"91
+[e ( _SYSTEM_Initialize ..  ]
+[; ;main.c: 94: pi_power.state = RESET;
 "94
+[e = . _pi_power 0 . `E7259 0 ]
+[; ;main.c: 97: led_pattern_idx = 0;
+"97
+[e = _led_pattern_idx -> -> 0 `i `uc ]
+[; ;main.c: 100: while (1)
+"100
+[e :U 855 ]
+[; ;main.c: 101: {
+"101
 {
-[; ;main.c: 96: OSCILLATOR_Initialize();
-"96
+[; ;main.c: 103: OSCILLATOR_Initialize();
+"103
 [e ( _OSCILLATOR_Initialize ..  ]
-[; ;main.c: 99: TMR5_Initialize();
-"99
-[e ( _TMR5_Initialize ..  ]
-[; ;main.c: 106: TMR0_Initialize();
+[; ;main.c: 106: TMR5_Initialize();
 "106
+[e ( _TMR5_Initialize ..  ]
+[; ;main.c: 113: TMR0_Initialize();
+"113
 [e ( _TMR0_Initialize ..  ]
-[; ;main.c: 109: pi_power.count += 1;
-"109
+[; ;main.c: 116: pi_power.count += 1;
+"116
 [e =+ . _pi_power 2 -> -> 1 `i `ui ]
-[; ;main.c: 110: if (pi_power.count == 0)
-"110
+[; ;main.c: 117: if (pi_power.count == 0)
+"117
 [e $ ! == . _pi_power 2 -> -> 0 `i `ui 857  ]
-[; ;main.c: 111: pi_power.count -= 1;
-"111
+[; ;main.c: 118: pi_power.count -= 1;
+"118
 [e =- . _pi_power 2 -> -> 1 `i `ui ]
 [e :U 857 ]
-[; ;main.c: 114: pi_power.running = (PORTDbits.RD3 == 0);
-"114
-[e = . _pi_power 4 -> -> == -> . . _PORTDbits 0 3 `i -> 0 `i `i `uc ]
-[; ;main.c: 117: if (pi_power.running == (0))
-"117
-[e $ ! == -> . _pi_power 4 `i -> 0 `i 858  ]
-[; ;main.c: 118: {
-"118
-{
-[; ;main.c: 119: pi_power.stopped_count += 1;
-"119
-[e =+ . _pi_power 3 -> -> 1 `i `ui ]
-[; ;main.c: 120: if (pi_power.stopped_count == 0)
-"120
-[e $ ! == . _pi_power 3 -> -> 0 `i `ui 859  ]
-[; ;main.c: 121: pi_power.stopped_count -= 1;
+[; ;main.c: 121: pi_power.running = (PORTDbits.RD3 == 0);
 "121
+[e = . _pi_power 4 -> -> == -> . . _PORTDbits 0 3 `i -> 0 `i `i `uc ]
+[; ;main.c: 124: if (pi_power.running == (0))
+"124
+[e $ ! == -> . _pi_power 4 `i -> 0 `i 858  ]
+[; ;main.c: 125: {
+"125
+{
+[; ;main.c: 126: pi_power.stopped_count += 1;
+"126
+[e =+ . _pi_power 3 -> -> 1 `i `ui ]
+[; ;main.c: 127: if (pi_power.stopped_count == 0)
+"127
+[e $ ! == . _pi_power 3 -> -> 0 `i `ui 859  ]
+[; ;main.c: 128: pi_power.stopped_count -= 1;
+"128
 [e =- . _pi_power 3 -> -> 1 `i `ui ]
 [e :U 859 ]
-"122
+"129
 }
-[; ;main.c: 122: }
+[; ;main.c: 129: }
 [e $U 860  ]
-"123
+"130
 [e :U 858 ]
-[; ;main.c: 123: else
-[; ;main.c: 124: pi_power.stopped_count = 0;
-"124
+[; ;main.c: 130: else
+[; ;main.c: 131: pi_power.stopped_count = 0;
+"131
 [e = . _pi_power 3 -> -> 0 `i `ui ]
 [e :U 860 ]
-[; ;main.c: 137: if (STANDBY == pi_power.state)
-"137
-[e $ ! == -> . `E7259 1 `i -> . _pi_power 0 `i 861  ]
-[; ;main.c: 138: {
-"138
-{
-[; ;main.c: 140: if (pi_power.prev != STANDBY)
-"140
-[e $ ! != -> . _pi_power 1 `i -> . `E7259 1 `i 862  ]
-[; ;main.c: 141: {
-"141
-{
-[; ;main.c: 142: pi_power.count = 0;
-"142
-[e = . _pi_power 2 -> -> 0 `i `ui ]
-[; ;main.c: 143: pi_power.stopped_count = 0;
-"143
-[e = . _pi_power 3 -> -> 0 `i `ui ]
-[; ;main.c: 144: pi_power.prev = STANDBY;
+[; ;main.c: 144: if (STANDBY == pi_power.state)
 "144
-[e = . _pi_power 1 . `E7259 1 ]
+[e $ ! == -> . `E7259 1 `i -> . _pi_power 0 `i 861  ]
+[; ;main.c: 145: {
 "145
+{
+[; ;main.c: 147: if (pi_power.prev != STANDBY)
+"147
+[e $ ! != -> . _pi_power 1 `i -> . `E7259 1 `i 862  ]
+[; ;main.c: 148: {
+"148
+{
+[; ;main.c: 149: pi_power.count = 0;
+"149
+[e = . _pi_power 2 -> -> 0 `i `ui ]
+[; ;main.c: 150: pi_power.stopped_count = 0;
+"150
+[e = . _pi_power 3 -> -> 0 `i `ui ]
+[; ;main.c: 151: pi_power.prev = STANDBY;
+"151
+[e = . _pi_power 1 . `E7259 1 ]
+"152
 }
 [e :U 862 ]
-[; ;main.c: 145: }
-[; ;main.c: 148: pi_supply_off();
-"148
+[; ;main.c: 152: }
+[; ;main.c: 155: pi_supply_off();
+"155
 [e ( _pi_supply_off ..  ]
-[; ;main.c: 151: request_pi_stop();
-"151
+[; ;main.c: 158: request_pi_stop();
+"158
 [e ( _request_pi_stop ..  ]
-[; ;main.c: 154: led_color = (0);
-"154
-[e = _led_color -> -> -> 0 `i `l `ul ]
-[; ;main.c: 161: if (pi_power.power_switch)
+[; ;main.c: 161: led_color = (0);
 "161
+[e = _led_color -> -> -> 0 `i `l `ul ]
+[; ;main.c: 168: if (pi_power.power_switch)
+"168
 [e $ ! != -> . _pi_power 5 `i -> -> -> 0 `i `uc `i 863  ]
-[; ;main.c: 162: pi_power.state = BOOTING;
-"162
+[; ;main.c: 169: pi_power.state = BOOTING;
+"169
 [e = . _pi_power 0 . `E7259 2 ]
 [e $U 864  ]
-"163
+"170
 [e :U 863 ]
-[; ;main.c: 163: else
-[; ;main.c: 164: pi_power.state = STANDBY;
-"164
+[; ;main.c: 170: else
+[; ;main.c: 171: pi_power.state = STANDBY;
+"171
 [e = . _pi_power 0 . `E7259 1 ]
 [e :U 864 ]
-"166
+"173
 }
-[; ;main.c: 166: }
+[; ;main.c: 173: }
 [e $U 865  ]
-"174
-[e :U 861 ]
-[; ;main.c: 174: else if (BOOTING == pi_power.state)
-[e $ ! == -> . `E7259 2 `i -> . _pi_power 0 `i 866  ]
-[; ;main.c: 175: {
-"175
-{
-[; ;main.c: 177: if (pi_power.prev != BOOTING)
-"177
-[e $ ! != -> . _pi_power 1 `i -> . `E7259 2 `i 867  ]
-[; ;main.c: 178: {
-"178
-{
-[; ;main.c: 179: pi_power.count = 0;
-"179
-[e = . _pi_power 2 -> -> 0 `i `ui ]
-[; ;main.c: 180: pi_power.prev = BOOTING;
-"180
-[e = . _pi_power 1 . `E7259 2 ]
 "181
+[e :U 861 ]
+[; ;main.c: 181: else if (BOOTING == pi_power.state)
+[e $ ! == -> . `E7259 2 `i -> . _pi_power 0 `i 866  ]
+[; ;main.c: 182: {
+"182
+{
+[; ;main.c: 184: if (pi_power.prev != BOOTING)
+"184
+[e $ ! != -> . _pi_power 1 `i -> . `E7259 2 `i 867  ]
+[; ;main.c: 185: {
+"185
+{
+[; ;main.c: 186: pi_power.count = 0;
+"186
+[e = . _pi_power 2 -> -> 0 `i `ui ]
+[; ;main.c: 187: pi_power.prev = BOOTING;
+"187
+[e = . _pi_power 1 . `E7259 2 ]
+"188
 }
 [e :U 867 ]
-[; ;main.c: 181: }
-[; ;main.c: 184: led_color = (0x0000c8e4);
-"184
+[; ;main.c: 188: }
+[; ;main.c: 191: led_color = (0x0000c8e4);
+"191
 [e = _led_color -> -> 51428 `ui `ul ]
-[; ;main.c: 187: pi_supply_on();
-"187
-[e ( _pi_supply_on ..  ]
-[; ;main.c: 190: request_pi_run();
-"190
-[e ( _request_pi_run ..  ]
-[; ;main.c: 194: if (pi_power.power_switch == (0))
+[; ;main.c: 194: pi_supply_on();
 "194
+[e ( _pi_supply_on ..  ]
+[; ;main.c: 197: request_pi_run();
+"197
+[e ( _request_pi_run ..  ]
+[; ;main.c: 201: if (pi_power.power_switch == (0))
+"201
 [e $ ! == -> . _pi_power 5 `i -> 0 `i 868  ]
-[; ;main.c: 195: pi_power.state = STANDBY;
-"195
+[; ;main.c: 202: pi_power.state = STANDBY;
+"202
 [e = . _pi_power 0 . `E7259 1 ]
 [e :U 868 ]
-[; ;main.c: 199: if (pi_power.running == (1))
-"199
+[; ;main.c: 206: if (pi_power.running == (1))
+"206
 [e $ ! == -> . _pi_power 4 `i -> 1 `i 869  ]
-[; ;main.c: 200: pi_power.state = OPERATE;
-"200
+[; ;main.c: 207: pi_power.state = OPERATE;
+"207
 [e = . _pi_power 0 . `E7259 3 ]
 [e :U 869 ]
-"202
+"209
 }
-[; ;main.c: 202: }
+[; ;main.c: 209: }
 [e $U 870  ]
-"213
-[e :U 866 ]
-[; ;main.c: 213: else if (OPERATE == pi_power.state)
-[e $ ! == -> . `E7259 3 `i -> . _pi_power 0 `i 871  ]
-[; ;main.c: 214: {
-"214
-{
-[; ;main.c: 216: if (pi_power.prev != OPERATE)
-"216
-[e $ ! != -> . _pi_power 1 `i -> . `E7259 3 `i 872  ]
-[; ;main.c: 217: {
-"217
-{
-[; ;main.c: 218: pi_power.count = 0;
-"218
-[e = . _pi_power 2 -> -> 0 `i `ui ]
-[; ;main.c: 219: pi_power.prev = OPERATE;
-"219
-[e = . _pi_power 1 . `E7259 3 ]
 "220
+[e :U 866 ]
+[; ;main.c: 220: else if (OPERATE == pi_power.state)
+[e $ ! == -> . `E7259 3 `i -> . _pi_power 0 `i 871  ]
+[; ;main.c: 221: {
+"221
+{
+[; ;main.c: 223: if (pi_power.prev != OPERATE)
+"223
+[e $ ! != -> . _pi_power 1 `i -> . `E7259 3 `i 872  ]
+[; ;main.c: 224: {
+"224
+{
+[; ;main.c: 225: pi_power.count = 0;
+"225
+[e = . _pi_power 2 -> -> 0 `i `ui ]
+[; ;main.c: 226: pi_power.prev = OPERATE;
+"226
+[e = . _pi_power 1 . `E7259 3 ]
+"227
 }
 [e :U 872 ]
-[; ;main.c: 220: }
-[; ;main.c: 223: led_color = (0x00f8f8f8);
-"223
+[; ;main.c: 227: }
+[; ;main.c: 230: led_color = (0x00f8f8f8);
+"230
 [e = _led_color -> -> 16316664 `l `ul ]
-[; ;main.c: 226: pi_supply_on();
-"226
+[; ;main.c: 233: pi_supply_on();
+"233
 [e ( _pi_supply_on ..  ]
-[; ;main.c: 229: request_pi_run();
-"229
-[e ( _request_pi_run ..  ]
-[; ;main.c: 234: if (pi_power.power_switch == 0)
-"234
-[e $ ! == -> . _pi_power 5 `i -> 0 `i 873  ]
-[; ;main.c: 235: {
-"235
-{
-[; ;main.c: 236: request_pi_stop();
+[; ;main.c: 236: request_pi_run();
 "236
+[e ( _request_pi_run ..  ]
+[; ;main.c: 241: if (pi_power.power_switch == 0)
+"241
+[e $ ! == -> . _pi_power 5 `i -> 0 `i 873  ]
+[; ;main.c: 242: {
+"242
+{
+[; ;main.c: 243: request_pi_stop();
+"243
 [e ( _request_pi_stop ..  ]
-[; ;main.c: 237: pi_power.state = SHUTDOWN;
-"237
+[; ;main.c: 244: pi_power.state = SHUTDOWN;
+"244
 [e = . _pi_power 0 . `E7259 4 ]
-"238
+"245
 }
 [e :U 873 ]
-[; ;main.c: 238: }
-[; ;main.c: 243: if (pi_power.running == (0))
-"243
+[; ;main.c: 245: }
+[; ;main.c: 250: if (pi_power.running == (0))
+"250
 [e $ ! == -> . _pi_power 4 `i -> 0 `i 874  ]
-[; ;main.c: 244: {
-"244
+[; ;main.c: 251: {
+"251
 {
-[; ;main.c: 245: pi_power.state = PI_CONTROL;
-"245
+[; ;main.c: 252: pi_power.state = PI_CONTROL;
+"252
 [e = . _pi_power 0 . `E7259 5 ]
-"246
+"253
 }
 [e :U 874 ]
-"248
+"255
 }
-[; ;main.c: 246: }
-[; ;main.c: 248: }
+[; ;main.c: 253: }
+[; ;main.c: 255: }
 [e $U 875  ]
-"257
-[e :U 871 ]
-[; ;main.c: 257: else if (SHUTDOWN == pi_power.state)
-[e $ ! == -> . `E7259 4 `i -> . _pi_power 0 `i 876  ]
-[; ;main.c: 258: {
-"258
-{
-[; ;main.c: 260: if (pi_power.prev != SHUTDOWN)
-"260
-[e $ ! != -> . _pi_power 1 `i -> . `E7259 4 `i 877  ]
-[; ;main.c: 261: {
-"261
-{
-[; ;main.c: 262: pi_power.count = 0;
-"262
-[e = . _pi_power 2 -> -> 0 `i `ui ]
-[; ;main.c: 263: pi_power.prev = SHUTDOWN;
-"263
-[e = . _pi_power 1 . `E7259 4 ]
 "264
+[e :U 871 ]
+[; ;main.c: 264: else if (SHUTDOWN == pi_power.state)
+[e $ ! == -> . `E7259 4 `i -> . _pi_power 0 `i 876  ]
+[; ;main.c: 265: {
+"265
+{
+[; ;main.c: 267: if (pi_power.prev != SHUTDOWN)
+"267
+[e $ ! != -> . _pi_power 1 `i -> . `E7259 4 `i 877  ]
+[; ;main.c: 268: {
+"268
+{
+[; ;main.c: 269: pi_power.count = 0;
+"269
+[e = . _pi_power 2 -> -> 0 `i `ui ]
+[; ;main.c: 270: pi_power.prev = SHUTDOWN;
+"270
+[e = . _pi_power 1 . `E7259 4 ]
+"271
 }
 [e :U 877 ]
-[; ;main.c: 264: }
-[; ;main.c: 267: led_color = (0x000000fc);
-"267
+[; ;main.c: 271: }
+[; ;main.c: 274: led_color = (0x000000fc);
+"274
 [e = _led_color -> -> -> 252 `i `l `ul ]
-[; ;main.c: 270: pi_supply_on();
-"270
-[e ( _pi_supply_on ..  ]
-[; ;main.c: 273: request_pi_stop();
-"273
-[e ( _request_pi_stop ..  ]
-[; ;main.c: 277: if (pi_power.stopped_count > (100u))
+[; ;main.c: 277: pi_supply_on();
 "277
+[e ( _pi_supply_on ..  ]
+[; ;main.c: 280: request_pi_stop();
+"280
+[e ( _request_pi_stop ..  ]
+[; ;main.c: 284: if (pi_power.stopped_count > (100u))
+"284
 [e $ ! > . _pi_power 3 -> 100 `ui 878  ]
-[; ;main.c: 278: pi_power.state = STANDBY;
-"278
+[; ;main.c: 285: pi_power.state = STANDBY;
+"285
 [e = . _pi_power 0 . `E7259 1 ]
 [e :U 878 ]
-"280
-}
-[; ;main.c: 280: }
-[e $U 879  ]
 "287
-[e :U 876 ]
-[; ;main.c: 287: else if (PI_CONTROL == pi_power.state)
-[e $ ! == -> . `E7259 5 `i -> . _pi_power 0 `i 880  ]
-[; ;main.c: 288: {
-"288
-{
-[; ;main.c: 290: if (pi_power.prev != PI_CONTROL)
-"290
-[e $ ! != -> . _pi_power 1 `i -> . `E7259 5 `i 881  ]
-[; ;main.c: 291: {
-"291
-{
-[; ;main.c: 292: pi_power.count = 0;
-"292
-[e = . _pi_power 2 -> -> 0 `i `ui ]
-[; ;main.c: 293: pi_power.prev = PI_CONTROL;
-"293
-[e = . _pi_power 1 . `E7259 5 ]
+}
+[; ;main.c: 287: }
+[e $U 879  ]
 "294
+[e :U 876 ]
+[; ;main.c: 294: else if (PI_CONTROL == pi_power.state)
+[e $ ! == -> . `E7259 5 `i -> . _pi_power 0 `i 880  ]
+[; ;main.c: 295: {
+"295
+{
+[; ;main.c: 297: if (pi_power.prev != PI_CONTROL)
+"297
+[e $ ! != -> . _pi_power 1 `i -> . `E7259 5 `i 881  ]
+[; ;main.c: 298: {
+"298
+{
+[; ;main.c: 299: pi_power.count = 0;
+"299
+[e = . _pi_power 2 -> -> 0 `i `ui ]
+[; ;main.c: 300: pi_power.prev = PI_CONTROL;
+"300
+[e = . _pi_power 1 . `E7259 5 ]
+"301
 }
 [e :U 881 ]
-[; ;main.c: 294: }
-[; ;main.c: 297: led_color = (0x00f800f0);
-"297
+[; ;main.c: 301: }
+[; ;main.c: 304: led_color = (0x00f800f0);
+"304
 [e = _led_color -> -> 16253168 `l `ul ]
-[; ;main.c: 300: pi_supply_on();
-"300
+[; ;main.c: 307: pi_supply_on();
+"307
 [e ( _pi_supply_on ..  ]
-[; ;main.c: 302: if ((pi_power.count < (200u)) && (pi_power.running))
-"302
+[; ;main.c: 309: if ((pi_power.count < (200u)) && (pi_power.running))
+"309
 [e $ ! && < . _pi_power 2 -> 200 `ui != -> . _pi_power 4 `i -> -> -> 0 `i `uc `i 882  ]
-[; ;main.c: 303: pi_power.state = OPERATE;
-"303
+[; ;main.c: 310: pi_power.state = OPERATE;
+"310
 [e = . _pi_power 0 . `E7259 3 ]
 [e :U 882 ]
-[; ;main.c: 305: if ((pi_power.count > (200u)) && (pi_power.running == (0)))
-"305
+[; ;main.c: 312: if ((pi_power.count > (200u)) && (pi_power.running == (0)))
+"312
 [e $ ! && > . _pi_power 2 -> 200 `ui == -> . _pi_power 4 `i -> 0 `i 883  ]
-[; ;main.c: 306: pi_power.state = STANDBY;
-"306
+[; ;main.c: 313: pi_power.state = STANDBY;
+"313
 [e = . _pi_power 0 . `E7259 1 ]
 [e :U 883 ]
-"308
-}
-[; ;main.c: 308: }
-[e $U 884  ]
 "315
+}
+[; ;main.c: 315: }
+[e $U 884  ]
+"322
 [e :U 880 ]
-[; ;main.c: 315: else if (RESET == pi_power.state)
+[; ;main.c: 322: else if (RESET == pi_power.state)
 [e $ ! == -> . `E7259 0 `i -> . _pi_power 0 `i 885  ]
-[; ;main.c: 316: {
-"316
-{
-[; ;main.c: 317: pi_power.state = STANDBY;
-"317
-[e = . _pi_power 0 . `E7259 1 ]
-[; ;main.c: 318: pi_power.prev = RESET;
-"318
-[e = . _pi_power 1 . `E7259 0 ]
-[; ;main.c: 319: pi_power.count = 0;
-"319
-[e = . _pi_power 2 -> -> 0 `i `ui ]
-[; ;main.c: 320: pi_power.stopped_count = 0;
-"320
-[e = . _pi_power 3 -> -> 0 `i `ui ]
-[; ;main.c: 323: PIN_MANAGER_Initialize();
+[; ;main.c: 323: {
 "323
-[e ( _PIN_MANAGER_Initialize ..  ]
-[; ;main.c: 325: led_color = (0x00f80000);
+{
+[; ;main.c: 324: pi_power.state = STANDBY;
+"324
+[e = . _pi_power 0 . `E7259 1 ]
+[; ;main.c: 325: pi_power.prev = RESET;
 "325
-[e = _led_color -> -> 16252928 `l `ul ]
-[; ;main.c: 326: prev_color = (0);
+[e = . _pi_power 1 . `E7259 0 ]
+[; ;main.c: 326: pi_power.count = 0;
 "326
-[e = _prev_color -> -> -> 0 `i `l `ul ]
-[; ;main.c: 329: pi_supply_off();
-"329
-[e ( _pi_supply_off ..  ]
-[; ;main.c: 332: request_pi_run();
+[e = . _pi_power 2 -> -> 0 `i `ui ]
+[; ;main.c: 327: pi_power.stopped_count = 0;
+"327
+[e = . _pi_power 3 -> -> 0 `i `ui ]
+[; ;main.c: 330: PIN_MANAGER_Initialize();
+"330
+[e ( _PIN_MANAGER_Initialize ..  ]
+[; ;main.c: 332: led_color = (0x00f80000);
 "332
+[e = _led_color -> -> 16252928 `l `ul ]
+[; ;main.c: 333: prev_color = (0);
+"333
+[e = _prev_color -> -> -> 0 `i `l `ul ]
+[; ;main.c: 336: pi_supply_off();
+"336
+[e ( _pi_supply_off ..  ]
+[; ;main.c: 339: request_pi_run();
+"339
 [e ( _request_pi_run ..  ]
-[; ;main.c: 335: do { LATCbits.LATC2 = 0; } while(0);
-"335
+[; ;main.c: 342: do { LATCbits.LATC2 = 0; } while(0);
+"342
 [e :U 888 ]
 {
 [e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 887 ]
-[; ;main.c: 338: do { LATCbits.LATC0 = 0; } while(0);
-"338
+[; ;main.c: 345: do { LATCbits.LATC0 = 0; } while(0);
+"345
 [e :U 891 ]
 {
 [e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 890 ]
-[; ;main.c: 341: reg_status = 0;
-"341
+[; ;main.c: 348: reg_status = 0;
+"348
 [e = _reg_status -> -> 0 `i `uc ]
-[; ;main.c: 342: reg_control = 0;
-"342
+[; ;main.c: 349: reg_control = 0;
+"349
 [e = _reg_control -> -> 0 `i `uc ]
-"344
+[; ;main.c: 351: printf("\n\n\r!RESET!\n\n\r");
+"351
+[e ( _printf :s 1C ]
+"353
 }
 [e :U 885 ]
-"355
+"364
 [e :U 884 ]
 [e :U 879 ]
 [e :U 875 ]
 [e :U 870 ]
 [e :U 865 ]
-[; ;main.c: 344: }
-[; ;main.c: 355: do { LATCbits.LATC5 = 1; } while(0);
+[; ;main.c: 353: }
+[; ;main.c: 364: do { LATCbits.LATC5 = 1; } while(0);
 [e :U 894 ]
 {
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 893 ]
-[; ;main.c: 358: ADC_Initialize();
-"358
-[e ( _ADC_Initialize ..  ]
-[; ;main.c: 361: meas_tune = ADC_GetConversion(channel_TUNE);
-"361
-[e = _meas_tune ( _ADC_GetConversion (1 . `E7193 0 ]
-[; ;main.c: 362: meas_band = ADC_GetConversion(channel_BAND);
-"362
-[e = _meas_band ( _ADC_GetConversion (1 . `E7193 1 ]
-[; ;main.c: 363: meas_vol = ADC_GetConversion(channel_VOL);
-"363
-[e = _meas_vol ( _ADC_GetConversion (1 . `E7193 2 ]
-[; ;main.c: 366: meas_pi3v = ADC_GetConversion(channel_PI3V);
-"366
-[e = _meas_pi3v ( _ADC_GetConversion (1 . `E7193 4 ]
-[; ;main.c: 367: pi3v = ((uint32_t)meas_pi3v * (uint32_t)5000 / (uint32_t)1024);
+[; ;main.c: 367: ADC_Initialize();
 "367
-[e = _pi3v -> / * -> _meas_pi3v `ul -> -> 5000 `i `ul -> -> 1024 `i `ul `ui ]
-[; ;main.c: 369: meas_pi5v = ADC_GetConversion(channel_PI5V);
-"369
-[e = _meas_pi5v ( _ADC_GetConversion (1 . `E7193 3 ]
-[; ;main.c: 370: pi5v = ((uint32_t)meas_pi5v * (uint32_t)5000 / (uint32_t)512);
+[e ( _ADC_Initialize ..  ]
+[; ;main.c: 370: meas_tune = ADC_GetConversion(channel_TUNE);
 "370
+[e = _meas_tune ( _ADC_GetConversion (1 . `E7199 0 ]
+[; ;main.c: 371: meas_band = ADC_GetConversion(channel_BAND);
+"371
+[e = _meas_band ( _ADC_GetConversion (1 . `E7199 1 ]
+[; ;main.c: 372: meas_vol = ADC_GetConversion(channel_VOL);
+"372
+[e = _meas_vol ( _ADC_GetConversion (1 . `E7199 2 ]
+[; ;main.c: 375: meas_pi3v = ADC_GetConversion(channel_PI3V);
+"375
+[e = _meas_pi3v ( _ADC_GetConversion (1 . `E7199 4 ]
+[; ;main.c: 376: pi3v = ((uint32_t)meas_pi3v * (uint32_t)5000 / (uint32_t)1024);
+"376
+[e = _pi3v -> / * -> _meas_pi3v `ul -> -> 5000 `i `ul -> -> 1024 `i `ul `ui ]
+[; ;main.c: 378: meas_pi5v = ADC_GetConversion(channel_PI5V);
+"378
+[e = _meas_pi5v ( _ADC_GetConversion (1 . `E7199 3 ]
+[; ;main.c: 379: pi5v = ((uint32_t)meas_pi5v * (uint32_t)5000 / (uint32_t)512);
+"379
 [e = _pi5v -> / * -> _meas_pi5v `ul -> -> 5000 `i `ul -> -> 512 `i `ul `ui ]
-[; ;main.c: 373: do { LATCbits.LATC5 = 0; } while(0);
-"373
+[; ;main.c: 382: do { LATCbits.LATC5 = 0; } while(0);
+"382
 [e :U 897 ]
 {
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 896 ]
-[; ;main.c: 380: if ( ((1)) )
-"380
-[e $ ! != -> 1 `i -> 0 `i 898  ]
-[; ;main.c: 381: {
-"381
-{
-[; ;main.c: 382: printf("\n\n\rLED   0x%08lX",led_color);
-"382
-[e ( _printf , (. :s 1C _led_color ]
-[; ;main.c: 383: printf("\n\rSTAT  0x%02X",reg_status);
-"383
-[e ( _printf , (. :s 2C -> _reg_status `i ]
-[; ;main.c: 384: printf("\n\rCTRL  0x%02X",reg_control);
-"384
-[e ( _printf , (. :s 3C -> _reg_control `i ]
-[; ;main.c: 385: printf("\n\rST_CNT  %u",pi_power.count);
-"385
-[e ( _printf , (. :s 4C . _pi_power 2 ]
-[; ;main.c: 386: printf("\n\rSP_CNT  %u",pi_power.stopped_count);
-"386
-[e ( _printf , (. :s 5C . _pi_power 3 ]
-[; ;main.c: 387: printf("\n\rSTATE   %u",pi_power.state);
-"387
-[e ( _printf , (. :s 6C -> . _pi_power 0 `i ]
-[; ;main.c: 388: printf("\n\rAC_ON   %u",pi_power.power_switch);
-"388
-[e ( _printf , (. :s 7C -> . _pi_power 5 `i ]
-[; ;main.c: 389: printf("\n\rPI_RUN  %u",pi_power.running);
+[; ;main.c: 389: if (((1)))
 "389
-[e ( _printf , (. :s 8C -> . _pi_power 4 `i ]
-[; ;main.c: 390: printf("\n\rTUNE    %u",meas_tune);
+[e $ ! != -> 1 `i -> 0 `i 898  ]
+[; ;main.c: 390: {
 "390
-[e ( _printf , (. :s 9C _meas_tune ]
-[; ;main.c: 391: printf("\n\rBAND    %u",meas_band);
+{
+[; ;main.c: 391: led_color = (uint32_t)meas_tune << 4;
 "391
-[e ( _printf , (. :s 10C _meas_band ]
-[; ;main.c: 392: printf("\n\rVOLUME  %u",meas_vol);
+[e = _led_color << -> _meas_tune `ul -> 4 `i ]
+[; ;main.c: 392: prev_color = led_color + 1u;
 "392
-[e ( _printf , (. :s 11C _meas_vol ]
-[; ;main.c: 393: printf("\n\n\rPi3V    %u mV",pi3v);
+[e = _prev_color + _led_color -> -> 1 `ui `ul ]
 "393
-[e ( _printf , (. :s 12C _pi3v ]
-[; ;main.c: 394: printf("\n\rPi5V    %u mV",pi5v);
-"394
-[e ( _printf , (. :s 13C _pi5v ]
-"395
 }
 [e :U 898 ]
-[; ;main.c: 395: }
-[; ;main.c: 400: if (prev_color != led_color)
-"400
-[e $ ! != _prev_color _led_color 899  ]
-[; ;main.c: 401: {
-"401
+[; ;main.c: 393: }
+[; ;main.c: 396: if ( ((1)) )
+"396
+[e $ ! != -> 1 `i -> 0 `i 899  ]
+[; ;main.c: 397: {
+"397
 {
-[; ;main.c: 404: (INTCONbits.GIE = 0);
+[; ;main.c: 398: printf("\n\n\rLED   0x%08lX",led_color);
+"398
+[e ( _printf , (. :s 2C _led_color ]
+[; ;main.c: 399: printf("\n\rSTAT  0x%02X",reg_status);
+"399
+[e ( _printf , (. :s 3C -> _reg_status `i ]
+[; ;main.c: 400: printf("\n\rCTRL  0x%02X",reg_control);
+"400
+[e ( _printf , (. :s 4C -> _reg_control `i ]
+[; ;main.c: 401: printf("\n\rST_CNT  %u",pi_power.count);
+"401
+[e ( _printf , (. :s 5C . _pi_power 2 ]
+[; ;main.c: 402: printf("\n\rSP_CNT  %u",pi_power.stopped_count);
+"402
+[e ( _printf , (. :s 6C . _pi_power 3 ]
+[; ;main.c: 403: printf("\n\rSTATE   %u",pi_power.state);
+"403
+[e ( _printf , (. :s 7C -> . _pi_power 0 `i ]
+[; ;main.c: 404: printf("\n\rAC_ON   %u",pi_power.power_switch);
 "404
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
-[; ;main.c: 406: (INTCONbits.PEIE = 0);
+[e ( _printf , (. :s 8C -> . _pi_power 5 `i ]
+[; ;main.c: 405: printf("\n\rPI_RUN  %u",pi_power.running);
+"405
+[e ( _printf , (. :s 9C -> . _pi_power 4 `i ]
+[; ;main.c: 406: printf("\n\rTUNE    %u",meas_tune);
 "406
-[e = . . _INTCONbits 1 6 -> -> 0 `i `uc ]
-[; ;main.c: 409: OSCILLATOR_FastClock();
+[e ( _printf , (. :s 10C _meas_tune ]
+[; ;main.c: 407: printf("\n\rBAND    %u",meas_band);
+"407
+[e ( _printf , (. :s 11C _meas_band ]
+[; ;main.c: 408: printf("\n\rVOLUME  %u",meas_vol);
+"408
+[e ( _printf , (. :s 12C _meas_vol ]
+[; ;main.c: 409: printf("\n\n\rPi3V    %u mV",pi3v);
 "409
-[e ( _OSCILLATOR_FastClock ..  ]
-[; ;main.c: 410: ws2812_send(led_color);
+[e ( _printf , (. :s 13C _pi3v ]
+[; ;main.c: 410: printf("\n\rPi5V    %u mV",pi5v);
 "410
-[e ( _ws2812_send (1 _led_color ]
-[; ;main.c: 413: OSCILLATOR_Initialize();
-"413
-[e ( _OSCILLATOR_Initialize ..  ]
-[; ;main.c: 415: prev_color = led_color;
-"415
-[e = _prev_color _led_color ]
-"416
+[e ( _printf , (. :s 14C _pi5v ]
+"411
 }
 [e :U 899 ]
-[; ;main.c: 416: }
-[; ;main.c: 419: (INTCONbits.GIE = 1);
-"419
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 421: (INTCONbits.PEIE = 1);
-"421
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 424: while (0 == TMR5_HasOverflowOccured());
-"424
-[e $U 900  ]
-[e :U 901 ]
-[e :U 900 ]
-[e $ == -> 0 `i -> ( _TMR5_HasOverflowOccured ..  `i 901  ]
-[e :U 902 ]
-[; ;main.c: 431: if (led_pattern_idx++ >= (16u))
+[; ;main.c: 411: }
+[; ;main.c: 416: if (prev_color != led_color)
+"416
+[e $ ! != _prev_color _led_color 900  ]
+[; ;main.c: 417: {
+"417
+{
+[; ;main.c: 420: (INTCONbits.GIE = 0);
+"420
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
+[; ;main.c: 422: (INTCONbits.PEIE = 0);
+"422
+[e = . . _INTCONbits 1 6 -> -> 0 `i `uc ]
+[; ;main.c: 425: OSCILLATOR_FastClock();
+"425
+[e ( _OSCILLATOR_FastClock ..  ]
+[; ;main.c: 426: ws2812_send(led_color);
+"426
+[e ( _ws2812_send (1 _led_color ]
+[; ;main.c: 429: OSCILLATOR_Initialize();
+"429
+[e ( _OSCILLATOR_Initialize ..  ]
+[; ;main.c: 431: prev_color = led_color;
 "431
-[e $ ! >= -> ++ _led_pattern_idx -> -> 1 `i `uc `ui -> 16 `ui 903  ]
-[; ;main.c: 432: {
+[e = _prev_color _led_color ]
 "432
-{
-[; ;main.c: 433: led_pattern_idx = 0;
-"433
-[e = _led_pattern_idx -> -> 0 `i `uc ]
-"434
 }
-[e :U 903 ]
-[; ;main.c: 434: }
-[; ;main.c: 436: if (led_pattern_tbl[pi_power.state][led_pattern_idx] == 0)
-"436
-[e $ ! == -> *U + &U *U + &U _led_pattern_tbl * -> . _pi_power 0 `ux -> * -> # *U &U *U &U _led_pattern_tbl `ui -> 16 `ui `ux * -> _led_pattern_idx `ux -> -> # *U &U *U + &U _led_pattern_tbl * -> . _pi_power 0 `ux -> * -> # *U &U *U &U _led_pattern_tbl `ui -> 16 `ui `ux `ui `ux `i -> 0 `i 904  ]
-[; ;main.c: 437: {
+[e :U 900 ]
+[; ;main.c: 432: }
+[; ;main.c: 435: (INTCONbits.GIE = 1);
+"435
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+[; ;main.c: 437: (INTCONbits.PEIE = 1);
 "437
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 440: while (0 == TMR5_HasOverflowOccured());
+"440
+[e $U 901  ]
+[e :U 902 ]
+[e :U 901 ]
+[e $ == -> 0 `i -> ( _TMR5_HasOverflowOccured ..  `i 902  ]
+[e :U 903 ]
+[; ;main.c: 447: if (++led_pattern_idx >= (12))
+"447
+[e $ ! >= -> =+ _led_pattern_idx -> -> 1 `i `uc `i -> 12 `i 904  ]
+[; ;main.c: 448: {
+"448
 {
-[; ;main.c: 438: do { LATCbits.LATC0 = 0; } while(0);
-"438
-[e :U 907 ]
+[; ;main.c: 449: led_pattern_idx = 0;
+"449
+[e = _led_pattern_idx -> -> 0 `i `uc ]
+"450
+}
+[e :U 904 ]
+[; ;main.c: 450: }
+[; ;main.c: 452: if (led_pattern_tbl[pi_power.state][led_pattern_idx] == 0)
+"452
+[e $ ! == -> *U + &U *U + &U _led_pattern_tbl * -> . _pi_power 0 `ux -> * -> # *U &U *U &U _led_pattern_tbl `ui -> -> 12 `i `ui `ux * -> _led_pattern_idx `ux -> -> # *U &U *U + &U _led_pattern_tbl * -> . _pi_power 0 `ux -> * -> # *U &U *U &U _led_pattern_tbl `ui -> -> 12 `i `ui `ux `ui `ux `i -> 0 `i 905  ]
+[; ;main.c: 453: {
+"453
+{
+[; ;main.c: 454: do { LATCbits.LATC0 = 0; } while(0);
+"454
+[e :U 908 ]
 {
 [e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 906 ]
-"439
+[e :U 907 ]
+"455
 }
-[; ;main.c: 439: }
-[e $U 908  ]
-"440
-[e :U 904 ]
-[; ;main.c: 440: else
-[; ;main.c: 441: {
-"441
+[; ;main.c: 455: }
+[e $U 909  ]
+"456
+[e :U 905 ]
+[; ;main.c: 456: else
+[; ;main.c: 457: {
+"457
 {
-[; ;main.c: 442: do { LATCbits.LATC0 = 1; } while(0);
-"442
-[e :U 911 ]
+[; ;main.c: 458: do { LATCbits.LATC0 = 1; } while(0);
+"458
+[e :U 912 ]
 {
 [e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 910 ]
-"443
+[e :U 911 ]
+"459
 }
-[e :U 908 ]
-[; ;main.c: 443: }
-[; ;main.c: 447: pi_power.power_switch = TMR0_HasOverflowOccured();
-"447
+[e :U 909 ]
+[; ;main.c: 459: }
+[; ;main.c: 463: pi_power.power_switch = TMR0_HasOverflowOccured();
+"463
 [e = . _pi_power 5 ( _TMR0_HasOverflowOccured ..  ]
-[; ;main.c: 450: update_status_reg();
-"450
+[; ;main.c: 466: update_status_reg();
+"466
 [e ( _update_status_reg ..  ]
-"452
+"468
 }
 [e :U 854 ]
-"93
+"100
 [e $U 855  ]
 [e :U 856 ]
-[; ;main.c: 452: }
-[; ;main.c: 453: }
-"453
+[; ;main.c: 468: }
+[; ;main.c: 469: }
+"469
 [e :UE 853 ]
 }
-"455
+"471
 [v _update_status_reg `(v ~T0 @X0 1 ef ]
-"456
+"472
 {
-[; ;main.c: 455: void update_status_reg(void)
-[; ;main.c: 456: {
+[; ;main.c: 471: void update_status_reg(void)
+[; ;main.c: 472: {
 [e :U _update_status_reg ]
 [f ]
-[; ;main.c: 471: reg_status = ((pi_power.power_switch & 1) << 7) |
-[; ;main.c: 472: ((PORTDbits.RD2 & 1) << 6) |
-[; ;main.c: 473: ((pi_power.running & 1) << 5 ) |
-[; ;main.c: 474: ((PORTCbits.RC4 & 1) << 4) |
-[; ;main.c: 475: (pi_power.state & 7);
-"475
+[; ;main.c: 487: reg_status = ((pi_power.power_switch & 1) << 7) |
+[; ;main.c: 488: ((PORTDbits.RD2 & 1) << 6) |
+[; ;main.c: 489: ((pi_power.running & 1) << 5 ) |
+[; ;main.c: 490: ((PORTCbits.RC4 & 1) << 4) |
+[; ;main.c: 491: (pi_power.state & 7);
+"491
 [e = _reg_status -> | | | | << & -> . _pi_power 5 `i -> 1 `i -> 7 `i << & -> . . _PORTDbits 0 2 `i -> 1 `i -> 6 `i << & -> . _pi_power 4 `i -> 1 `i -> 5 `i << & -> . . _PORTCbits 0 4 `i -> 1 `i -> 4 `i & -> . _pi_power 0 `i -> 7 `i `uc ]
-[; ;main.c: 476: }
-"476
-[e :UE 912 ]
+[; ;main.c: 492: }
+"492
+[e :UE 913 ]
 }
-"478
+"494
 [v _pi_supply_off `(v ~T0 @X0 1 ef ]
-"479
+"495
 {
-[; ;main.c: 478: void pi_supply_off(void)
-[; ;main.c: 479: {
+[; ;main.c: 494: void pi_supply_off(void)
+[; ;main.c: 495: {
 [e :U _pi_supply_off ]
 [f ]
-[; ;main.c: 481: do { LATDbits.LATD2 = 0; } while(0);
-"481
-[e :U 916 ]
+[; ;main.c: 497: do { LATDbits.LATD2 = 0; } while(0);
+"497
+[e :U 917 ]
 {
 [e = . . _LATDbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 915 ]
-[; ;main.c: 482: }
-"482
-[e :UE 913 ]
+[e :U 916 ]
+[; ;main.c: 498: }
+"498
+[e :UE 914 ]
 }
-"484
+"500
 [v _pi_supply_on `(v ~T0 @X0 1 ef ]
-"485
+"501
 {
-[; ;main.c: 484: void pi_supply_on(void)
-[; ;main.c: 485: {
+[; ;main.c: 500: void pi_supply_on(void)
+[; ;main.c: 501: {
 [e :U _pi_supply_on ]
 [f ]
-[; ;main.c: 487: do { LATDbits.LATD2 = 1; } while(0);
-"487
-[e :U 920 ]
+[; ;main.c: 503: do { LATDbits.LATD2 = 1; } while(0);
+"503
+[e :U 921 ]
 {
 [e = . . _LATDbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 919 ]
-[; ;main.c: 488: }
-"488
-[e :UE 917 ]
+[e :U 920 ]
+[; ;main.c: 504: }
+"504
+[e :UE 918 ]
 }
-"490
+"506
 [v _request_pi_run `(v ~T0 @X0 1 ef ]
-"491
+"507
 {
-[; ;main.c: 490: void request_pi_run(void)
-[; ;main.c: 491: {
+[; ;main.c: 506: void request_pi_run(void)
+[; ;main.c: 507: {
 [e :U _request_pi_run ]
 [f ]
-[; ;main.c: 493: do { LATCbits.LATC4 = 1; } while(0);
-"493
-[e :U 924 ]
+[; ;main.c: 509: do { LATCbits.LATC4 = 1; } while(0);
+"509
+[e :U 925 ]
 {
 [e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 923 ]
-[; ;main.c: 494: }
-"494
-[e :UE 921 ]
+[e :U 924 ]
+[; ;main.c: 510: }
+"510
+[e :UE 922 ]
 }
-"496
+"512
 [v _request_pi_stop `(v ~T0 @X0 1 ef ]
-"497
+"513
 {
-[; ;main.c: 496: void request_pi_stop(void)
-[; ;main.c: 497: {
+[; ;main.c: 512: void request_pi_stop(void)
+[; ;main.c: 513: {
 [e :U _request_pi_stop ]
 [f ]
-[; ;main.c: 499: do { LATCbits.LATC4 = 0; } while(0);
-"499
-[e :U 928 ]
+[; ;main.c: 515: do { LATCbits.LATC4 = 0; } while(0);
+"515
+[e :U 929 ]
 {
 [e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 927 ]
-[; ;main.c: 500: }
-"500
-[e :UE 925 ]
+[e :U 928 ]
+[; ;main.c: 516: }
+"516
+[e :UE 926 ]
 }
-"548
-[v _I2C2_StatusCallback `(v ~T0 @X0 1 ef1`E7163 ]
-"549
+"564
+[v _I2C2_StatusCallback `(v ~T0 @X0 1 ef1`E7169 ]
+"565
 {
-[; ;main.c: 548: void I2C2_StatusCallback(I2C2_SLAVE_DRIVER_STATUS i2c_bus_state)
-[; ;main.c: 549: {
+[; ;main.c: 564: void I2C2_StatusCallback(I2C2_SLAVE_DRIVER_STATUS i2c_bus_state)
+[; ;main.c: 565: {
 [e :U _I2C2_StatusCallback ]
-"548
-[v _i2c_bus_state `E7163 ~T0 @X0 1 r1 ]
-"549
+"564
+[v _i2c_bus_state `E7169 ~T0 @X0 1 r1 ]
+"565
 [f ]
-"550
-[v F7304 `uc ~T0 @X0 1 s RegAddress ]
-[i F7304
+"566
+[v F7306 `uc ~T0 @X0 1 s RegAddress ]
+[i F7306
 -> -> 0 `i `uc
 ]
-"551
-[v F7305 `uc ~T0 @X0 1 s slaveWriteType ]
-[i F7305
+"567
+[v F7307 `uc ~T0 @X0 1 s slaveWriteType ]
+[i F7307
 -> . `E7243 0 `uc
 ]
-[; ;main.c: 550: static uint8_t RegAddress = 0;
-[; ;main.c: 551: static uint8_t slaveWriteType = SLAVE_NORMAL_DATA;
-[; ;main.c: 553: switch (i2c_bus_state)
-"553
-[e $U 931  ]
-[; ;main.c: 554: {
-"554
-{
-[; ;main.c: 555: case I2C2_SLAVE_WRITE_REQUEST:
-"555
-[e :U 932 ]
-[; ;main.c: 557: slaveWriteType = SLAVE_DATA_ADDRESS;
-"557
-[e = F7305 -> . `E7243 1 `uc ]
-[; ;main.c: 558: break;
-"558
-[e $U 930  ]
-[; ;main.c: 561: case I2C2_SLAVE_WRITE_COMPLETED:
-"561
-[e :U 933 ]
-[; ;main.c: 562: switch(slaveWriteType)
-"562
-[e $U 935  ]
-[; ;main.c: 563: {
-"563
-{
-[; ;main.c: 564: case SLAVE_DATA_ADDRESS:
-"564
-[e :U 936 ]
-[; ;main.c: 565: RegAddress = I2C2_slaveWriteData;
-"565
-[e = F7304 _I2C2_slaveWriteData ]
-[; ;main.c: 566: break;
-"566
-[e $U 934  ]
-[; ;main.c: 568: case SLAVE_NORMAL_DATA:
-"568
-[e :U 937 ]
-[; ;main.c: 569: default:
+[; ;main.c: 566: static uint8_t RegAddress = 0;
+[; ;main.c: 567: static uint8_t slaveWriteType = SLAVE_NORMAL_DATA;
+[; ;main.c: 569: switch (i2c_bus_state)
 "569
-[e :U 938 ]
-[; ;main.c: 572: RegAddress += 1;
-"572
-[e =+ F7304 -> -> 1 `i `uc ]
-[; ;main.c: 573: RegAddress &= 3;
+[e $U 932  ]
+[; ;main.c: 570: {
+"570
+{
+[; ;main.c: 571: case I2C2_SLAVE_WRITE_REQUEST:
+"571
+[e :U 933 ]
+[; ;main.c: 573: slaveWriteType = SLAVE_DATA_ADDRESS;
 "573
-[e =& F7304 -> -> 3 `i `uc ]
+[e = F7307 -> . `E7243 1 `uc ]
 [; ;main.c: 574: break;
 "574
-[e $U 934  ]
-"575
-}
-[; ;main.c: 575: }
-[e $U 934  ]
-"562
-[e :U 935 ]
-[e [\ F7305 , $ -> . `E7243 1 `uc 936
- , $ -> . `E7243 0 `uc 937
- 938 ]
-"575
-[e :U 934 ]
-[; ;main.c: 577: slaveWriteType = SLAVE_NORMAL_DATA;
+[e $U 931  ]
+[; ;main.c: 577: case I2C2_SLAVE_WRITE_COMPLETED:
 "577
-[e = F7305 -> . `E7243 0 `uc ]
-[; ;main.c: 578: break;
+[e :U 934 ]
+[; ;main.c: 578: switch(slaveWriteType)
 "578
-[e $U 930  ]
-[; ;main.c: 580: case I2C2_SLAVE_READ_REQUEST:
+[e $U 936  ]
+[; ;main.c: 579: {
+"579
+{
+[; ;main.c: 580: case SLAVE_DATA_ADDRESS:
 "580
-[e :U 939 ]
-[; ;main.c: 583: if (RegAddress == 0)
-"583
-[e $ ! == -> F7304 `i -> 0 `i 940  ]
-[; ;main.c: 584: {
+[e :U 937 ]
+[; ;main.c: 581: RegAddress = I2C2_slaveWriteData;
+"581
+[e = F7306 _I2C2_slaveWriteData ]
+[; ;main.c: 582: break;
+"582
+[e $U 935  ]
+[; ;main.c: 584: case SLAVE_NORMAL_DATA:
 "584
-{
-[; ;main.c: 585: SSP2BUF = reg_status;
+[e :U 938 ]
+[; ;main.c: 585: default:
 "585
-[e = _SSP2BUF _reg_status ]
-"586
-}
-[e :U 940 ]
-[; ;main.c: 586: }
-[; ;main.c: 588: if (RegAddress == 1)
+[e :U 939 ]
+[; ;main.c: 588: RegAddress += 1;
 "588
-[e $ ! == -> F7304 `i -> 1 `i 941  ]
-[; ;main.c: 589: {
+[e =+ F7306 -> -> 1 `i `uc ]
+[; ;main.c: 589: RegAddress &= 3;
 "589
-{
-[; ;main.c: 590: SSP2BUF = meas_tune;
+[e =& F7306 -> -> 3 `i `uc ]
+[; ;main.c: 590: break;
 "590
-[e = _SSP2BUF -> _meas_tune `uc ]
+[e $U 935  ]
 "591
 }
 [; ;main.c: 591: }
-[e $U 942  ]
+[e $U 935  ]
+"578
+[e :U 936 ]
+[e [\ F7307 , $ -> . `E7243 1 `uc 937
+ , $ -> . `E7243 0 `uc 938
+ 939 ]
+"591
+[e :U 935 ]
+[; ;main.c: 593: slaveWriteType = SLAVE_NORMAL_DATA;
 "593
-[e :U 941 ]
-[; ;main.c: 593: else if (RegAddress == 2)
-[e $ ! == -> F7304 `i -> 2 `i 943  ]
-[; ;main.c: 594: {
+[e = F7307 -> . `E7243 0 `uc ]
+[; ;main.c: 594: break;
 "594
-{
-[; ;main.c: 595: SSP2BUF = meas_band;
-"595
-[e = _SSP2BUF -> _meas_band `uc ]
+[e $U 931  ]
+[; ;main.c: 596: case I2C2_SLAVE_READ_REQUEST:
 "596
-}
-[; ;main.c: 596: }
-[e $U 944  ]
-"598
-[e :U 943 ]
-[; ;main.c: 598: else if (RegAddress == 3)
-[e $ ! == -> F7304 `i -> 3 `i 945  ]
-[; ;main.c: 599: {
+[e :U 940 ]
+[; ;main.c: 599: if (RegAddress == 0)
 "599
-{
-[; ;main.c: 600: SSP2BUF = meas_vol;
+[e $ ! == -> F7306 `i -> 0 `i 941  ]
+[; ;main.c: 600: {
 "600
-[e = _SSP2BUF -> _meas_vol `uc ]
+{
+[; ;main.c: 601: SSP2BUF = reg_status;
 "601
+[e = _SSP2BUF _reg_status ]
+"602
 }
-[e :U 945 ]
-"603
-[e :U 944 ]
-[e :U 942 ]
-[; ;main.c: 601: }
-[; ;main.c: 603: RegAddress += 1;
-[e =+ F7304 -> -> 1 `i `uc ]
-[; ;main.c: 604: RegAddress &= 3;
+[e :U 941 ]
+[; ;main.c: 602: }
+[; ;main.c: 604: if (RegAddress == 1)
 "604
-[e =& F7304 -> -> 3 `i `uc ]
-[; ;main.c: 605: break;
+[e $ ! == -> F7306 `i -> 1 `i 942  ]
+[; ;main.c: 605: {
 "605
-[e $U 930  ]
-[; ;main.c: 607: case I2C2_SLAVE_READ_COMPLETED:
+{
+[; ;main.c: 606: SSP2BUF = meas_tune;
+"606
+[e = _SSP2BUF -> _meas_tune `uc ]
 "607
-[e :U 946 ]
-[; ;main.c: 608: default:;
-"608
-[e :U 947 ]
-"610
 }
-[; ;main.c: 610: }
-[e $U 930  ]
-"553
-[e :U 931 ]
-[e [\ _i2c_bus_state , $ . `E7163 0 932
- , $ . `E7163 2 933
- , $ . `E7163 1 939
- , $ . `E7163 3 946
- 947 ]
+[; ;main.c: 607: }
+[e $U 943  ]
+"609
+[e :U 942 ]
+[; ;main.c: 609: else if (RegAddress == 2)
+[e $ ! == -> F7306 `i -> 2 `i 944  ]
+[; ;main.c: 610: {
 "610
-[e :U 930 ]
-[; ;main.c: 612: }
+{
+[; ;main.c: 611: SSP2BUF = meas_band;
+"611
+[e = _SSP2BUF -> _meas_band `uc ]
 "612
-[e :UE 929 ]
+}
+[; ;main.c: 612: }
+[e $U 945  ]
+"614
+[e :U 944 ]
+[; ;main.c: 614: else if (RegAddress == 3)
+[e $ ! == -> F7306 `i -> 3 `i 946  ]
+[; ;main.c: 615: {
+"615
+{
+[; ;main.c: 616: SSP2BUF = meas_vol;
+"616
+[e = _SSP2BUF -> _meas_vol `uc ]
+"617
+}
+[e :U 946 ]
+"619
+[e :U 945 ]
+[e :U 943 ]
+[; ;main.c: 617: }
+[; ;main.c: 619: RegAddress += 1;
+[e =+ F7306 -> -> 1 `i `uc ]
+[; ;main.c: 620: RegAddress &= 3;
+"620
+[e =& F7306 -> -> 3 `i `uc ]
+[; ;main.c: 621: break;
+"621
+[e $U 931  ]
+[; ;main.c: 623: case I2C2_SLAVE_READ_COMPLETED:
+"623
+[e :U 947 ]
+[; ;main.c: 624: default:;
+"624
+[e :U 948 ]
+"626
+}
+[; ;main.c: 626: }
+[e $U 931  ]
+"569
+[e :U 932 ]
+[e [\ _i2c_bus_state , $ . `E7169 0 933
+ , $ . `E7169 2 934
+ , $ . `E7169 1 940
+ , $ . `E7169 3 947
+ 948 ]
+"626
+[e :U 931 ]
+[; ;main.c: 628: }
+"628
+[e :UE 930 ]
 }
 [p f _printf 10519572 ]
-[a 4C 10 13 83 84 95 67 78 84 32 32 37 117 0 ]
-[a 5C 10 13 83 80 95 67 78 84 32 32 37 117 0 ]
-[a 8C 10 13 80 73 95 82 85 78 32 32 37 117 0 ]
-[a 11C 10 13 86 79 76 85 77 69 32 32 37 117 0 ]
-[a 7C 10 13 65 67 95 79 78 32 32 32 37 117 0 ]
-[a 6C 10 13 83 84 65 84 69 32 32 32 37 117 0 ]
-[a 9C 10 13 84 85 78 69 32 32 32 32 37 117 0 ]
-[a 10C 10 13 66 65 78 68 32 32 32 32 37 117 0 ]
-[a 1C 10 10 13 76 69 68 32 32 32 48 120 37 48 56 108 88 0 ]
-[a 2C 10 13 83 84 65 84 32 32 48 120 37 48 50 88 0 ]
-[a 3C 10 13 67 84 82 76 32 32 48 120 37 48 50 88 0 ]
-[a 13C 10 13 80 105 53 86 32 32 32 32 37 117 32 109 86 0 ]
-[a 12C 10 10 13 80 105 51 86 32 32 32 32 37 117 32 109 86 0 ]
+[a 5C 10 13 83 84 95 67 78 84 32 32 37 117 0 ]
+[a 6C 10 13 83 80 95 67 78 84 32 32 37 117 0 ]
+[a 9C 10 13 80 73 95 82 85 78 32 32 37 117 0 ]
+[a 12C 10 13 86 79 76 85 77 69 32 32 37 117 0 ]
+[a 8C 10 13 65 67 95 79 78 32 32 32 37 117 0 ]
+[a 7C 10 13 83 84 65 84 69 32 32 32 37 117 0 ]
+[a 10C 10 13 84 85 78 69 32 32 32 32 37 117 0 ]
+[a 11C 10 13 66 65 78 68 32 32 32 32 37 117 0 ]
+[a 2C 10 10 13 76 69 68 32 32 32 48 120 37 48 56 108 88 0 ]
+[a 3C 10 13 83 84 65 84 32 32 48 120 37 48 50 88 0 ]
+[a 4C 10 13 67 84 82 76 32 32 48 120 37 48 50 88 0 ]
+[a 14C 10 13 80 105 53 86 32 32 32 32 37 117 32 109 86 0 ]
+[a 13C 10 10 13 80 105 51 86 32 32 32 32 37 117 32 109 86 0 ]
+[a 1C 10 10 13 33 82 69 83 69 84 33 10 10 13 0 ]

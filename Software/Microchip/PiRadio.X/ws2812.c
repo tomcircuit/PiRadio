@@ -46,5 +46,9 @@ void ws2812_send(unsigned long led)
    }
    // delay 50us to ensure the word gets accepted into WS2812
    __delay_us(50);
+   #asm
+     bsf PORTC,1
+     bcf PORTC,1
+   #endasm
 }
  

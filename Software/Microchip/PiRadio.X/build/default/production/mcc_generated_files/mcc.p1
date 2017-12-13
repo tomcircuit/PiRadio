@@ -15,7 +15,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
 "95 mcc_generated_files/eusart1.h
 [v _EUSART1_Initialize `(v ~T0 @X0 0 ef ]
-"16010 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"16010 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
 "15953
 [v _OSCCON2 `Vuc ~T0 @X0 0 e@4050 ]
@@ -91,7 +91,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f44k22.h: 50: extern volatile unsigned char ANSELA @ 0xF38;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"52 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [; ;pic18f44k22.h: 52: asm("ANSELA equ 0F38h");
 [; <" ANSELA equ 0F38h ;# ">
 [; ;pic18f44k22.h: 55: typedef union {
@@ -6668,6 +6668,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;interrupt_manager.h: 110: void interrupt INTERRUPT_InterruptManager(void);
 [; ;interrupt_manager.h: 122: void INTERRUPT_Initialize (void);
 [; ;__size_t.h: 4: typedef unsigned size_t;
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 43: struct __prbuf
+[; ;stdio.h: 44: {
+[; ;stdio.h: 45: char * ptr;
+[; ;stdio.h: 46: void (* func)(char);
+[; ;stdio.h: 47: };
+[; ;errno.h: 29: extern int errno;
+[; ;conio.h: 12: extern void init_uart(void);
+[; ;conio.h: 14: extern char getch(void);
+[; ;conio.h: 15: extern char getche(void);
+[; ;conio.h: 16: extern void putch(char);
+[; ;conio.h: 17: extern void ungetch(char);
+[; ;conio.h: 19: extern __bit kbhit(void);
+[; ;conio.h: 23: extern char * cgets(char *);
+[; ;conio.h: 24: extern void cputs(const char *);
+[; ;stdio.h: 88: extern int cprintf(char *, ...);
+[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 183: extern char * gets(char *);
+[; ;stdio.h: 184: extern int puts(const char *);
+[; ;stdio.h: 185: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+[; ;stdio.h: 187: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 195: extern int printf(const char *, ...);
+[; ;eusart1.h: 95: void EUSART1_Initialize(void);
+[; ;eusart1.h: 115: uint8_t EUSART1_Read(void);
+[; ;eusart1.h: 135: void EUSART1_Write(uint8_t txData);
 [; ;stddef.h: 6: typedef int ptrdiff_t;
 [; ;i2c2.h: 78: typedef enum
 [; ;i2c2.h: 79: {
@@ -6709,38 +6741,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;adc.h: 228: bool ADC_IsConversionDone();
 [; ;adc.h: 261: adc_result_t ADC_GetConversionResult(void);
 [; ;adc.h: 291: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[; ;stdarg.h: 7: typedef void * va_list[1];
-[; ;stdarg.h: 10: extern void * __va_start(void);
-[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
-[; ;stdio.h: 43: struct __prbuf
-[; ;stdio.h: 44: {
-[; ;stdio.h: 45: char * ptr;
-[; ;stdio.h: 46: void (* func)(char);
-[; ;stdio.h: 47: };
-[; ;errno.h: 29: extern int errno;
-[; ;conio.h: 12: extern void init_uart(void);
-[; ;conio.h: 14: extern char getch(void);
-[; ;conio.h: 15: extern char getche(void);
-[; ;conio.h: 16: extern void putch(char);
-[; ;conio.h: 17: extern void ungetch(char);
-[; ;conio.h: 19: extern __bit kbhit(void);
-[; ;conio.h: 23: extern char * cgets(char *);
-[; ;conio.h: 24: extern void cputs(const char *);
-[; ;stdio.h: 88: extern int cprintf(char *, ...);
-[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-[; ;stdio.h: 183: extern char * gets(char *);
-[; ;stdio.h: 184: extern int puts(const char *);
-[; ;stdio.h: 185: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-[; ;stdio.h: 187: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
-[; ;stdio.h: 195: extern int printf(const char *, ...);
-[; ;eusart1.h: 95: void EUSART1_Initialize(void);
-[; ;eusart1.h: 115: uint8_t EUSART1_Read(void);
-[; ;eusart1.h: 135: void EUSART1_Write(uint8_t txData);
 [; ;tmr5.h: 93: void TMR5_Initialize(void);
 [; ;tmr5.h: 124: void TMR5_StartTimer(void);
 [; ;tmr5.h: 154: void TMR5_StopTimer(void);
@@ -6752,7 +6752,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr5.h: 366: bool TMR5_HasOverflowOccured(void);
 [; ;mcc.h: 73: void SYSTEM_Initialize(void);
 [; ;mcc.h: 86: void OSCILLATOR_Initialize(void);
-[; ;mcc.h: 100: void OSCILLATOR_FastClock(void);
+[; ;mcc.h: 99: void OSCILLATOR_FastClock(void);
 "105 mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
 "106
@@ -6790,12 +6790,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 848 ]
 }
 "118
-[v _OSCILLATOR_FastClock `(v ~T0 @X0 1 ef ]
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
 "119
 {
-[; ;mcc.c: 118: void OSCILLATOR_FastClock(void)
+[; ;mcc.c: 118: void OSCILLATOR_Initialize(void)
 [; ;mcc.c: 119: {
-[e :U _OSCILLATOR_FastClock ]
+[e :U _OSCILLATOR_Initialize ]
 [f ]
 [; ;mcc.c: 121: OSCCON = 0x70;
 "121
@@ -6803,20 +6803,20 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 123: OSCCON2 = 0x04;
 "123
 [e = _OSCCON2 -> -> 4 `i `uc ]
-[; ;mcc.c: 125: OSCTUNE = 0x40;
+[; ;mcc.c: 125: OSCTUNE = 0x00;
 "125
-[e = _OSCTUNE -> -> 64 `i `uc ]
+[e = _OSCTUNE -> -> 0 `i `uc ]
 [; ;mcc.c: 126: }
 "126
 [e :UE 849 ]
 }
 "128
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+[v _OSCILLATOR_FastClock `(v ~T0 @X0 1 ef ]
 "129
 {
-[; ;mcc.c: 128: void OSCILLATOR_Initialize(void)
+[; ;mcc.c: 128: void OSCILLATOR_FastClock(void)
 [; ;mcc.c: 129: {
-[e :U _OSCILLATOR_Initialize ]
+[e :U _OSCILLATOR_FastClock ]
 [f ]
 [; ;mcc.c: 131: OSCCON = 0x70;
 "131
@@ -6824,9 +6824,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 133: OSCCON2 = 0x04;
 "133
 [e = _OSCCON2 -> -> 4 `i `uc ]
-[; ;mcc.c: 135: OSCTUNE = 0x00;
+[; ;mcc.c: 135: OSCTUNE = 0x40;
 "135
-[e = _OSCTUNE -> -> 0 `i `uc ]
+[e = _OSCTUNE -> -> 64 `i `uc ]
 [; ;mcc.c: 136: }
 "136
 [e :UE 850 ]

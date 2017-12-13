@@ -1,10 +1,10 @@
 
 # 1 "main.c"
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\__size_t.h"
+# 4 "D:\Program Files\Microchip\xc8\v1.44\include\__size_t.h"
 typedef unsigned size_t;
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdarg.h"
+# 7 "D:\Program Files\Microchip\xc8\v1.44\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -13,17 +13,17 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 43 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
+# 43 "D:\Program Files\Microchip\xc8\v1.44\include\stdio.h"
 struct __prbuf
 {
 char * ptr;
 void (* func)(char);
 };
 
-# 29 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\errno.h"
+# 29 "D:\Program Files\Microchip\xc8\v1.44\include\errno.h"
 extern int errno;
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\conio.h"
+# 12 "D:\Program Files\Microchip\xc8\v1.44\include\conio.h"
 extern void init_uart(void);
 
 extern char getch(void);
@@ -37,7 +37,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 88 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
+# 88 "D:\Program Files\Microchip\xc8\v1.44\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -64,7 +64,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdlib.h"
+# 7 "D:\Program Files\Microchip\xc8\v1.44\include\stdlib.h"
 typedef unsigned short wchar_t;
 
 # 15
@@ -113,11 +113,11 @@ extern void free(void *);
 extern void * realloc(void *, size_t);
 
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\xc8debug.h"
+# 13 "D:\Program Files\Microchip\xc8\v1.44\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 86 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdlib.h"
+# 86 "D:\Program Files\Microchip\xc8\v1.44\include\stdlib.h"
 extern int atexit(void (*)(void));
 extern char * getenv(const char *);
 extern char ** environ;
@@ -138,7 +138,7 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
+# 13 "D:\Program Files\Microchip\xc8\v1.44\include\stdint.h"
 typedef signed char int8_t;
 
 # 20
@@ -231,12 +231,12 @@ typedef uint16_t uintptr_t;
 # 21 "ws2812.h"
 void ws2812_send(unsigned long led);
 
-# 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
+# 26 "D:\Program Files\Microchip\xc8\v1.44\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
-# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h"
+# 50 "D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h"
 extern volatile unsigned char ANSELA @ 0xF38;
 
 asm("ANSELA equ 0F38h");
@@ -8650,7 +8650,7 @@ extern volatile __bit nW2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
 extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h"
+# 18 "D:\Program Files\Microchip\xc8\v1.44\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -8683,7 +8683,7 @@ void PIN_MANAGER_Initialize (void);
 # 294
 void PIN_MANAGER_IOC(void);
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
+# 12 "D:\Program Files\Microchip\xc8\v1.44\include\stdbool.h"
 typedef unsigned char bool;
 
 # 110 "mcc_generated_files/interrupt_manager.h"
@@ -8692,7 +8692,16 @@ void interrupt INTERRUPT_InterruptManager(void);
 # 122
 void INTERRUPT_Initialize (void);
 
-# 6 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stddef.h"
+# 95 "mcc_generated_files/eusart1.h"
+void EUSART1_Initialize(void);
+
+# 115
+uint8_t EUSART1_Read(void);
+
+# 135
+void EUSART1_Write(uint8_t txData);
+
+# 6 "D:\Program Files\Microchip\xc8\v1.44\include\stddef.h"
 typedef int ptrdiff_t;
 
 # 78 "mcc_generated_files/i2c2.h"
@@ -8775,15 +8784,6 @@ adc_result_t ADC_GetConversionResult(void);
 # 291
 adc_result_t ADC_GetConversion(adc_channel_t channel);
 
-# 95 "mcc_generated_files/eusart1.h"
-void EUSART1_Initialize(void);
-
-# 115
-uint8_t EUSART1_Read(void);
-
-# 135
-void EUSART1_Write(uint8_t txData);
-
 # 93 "mcc_generated_files/tmr5.h"
 void TMR5_Initialize(void);
 
@@ -8817,10 +8817,10 @@ void SYSTEM_Initialize(void);
 # 86
 void OSCILLATOR_Initialize(void);
 
-# 100
+# 99
 void OSCILLATOR_FastClock(void);
 
-# 29 "main.c"
+# 31 "main.c"
 typedef enum
 {
 SLAVE_NORMAL_DATA,
@@ -8850,13 +8850,18 @@ uint8_t power_switch;
 
 
 
-uint8_t led_pattern_tbl[MAX_STATES][(16u)] = {
-{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-{0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1},
-{0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1},
-{0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1},
-{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+uint8_t led_pattern_tbl[MAX_STATES][(12)] = {
+{255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255},
+{255, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 },
+{255, 255, 255, 0 , 0 , 0 , 255, 255, 255, 0 , 0 , 0 },
+{255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255},
+{0 , 255, 255, 255, 255, 255, 0 , 255, 255, 255, 255, 255},
+{255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255}
+};
+
+uint32_t color_test_table[8] = {
+(0x000000fc), (0x0000c8e4), (0x0000e8e8), (0x0000f800),
+(0x00f80000), (0x00f800f0), (0x00f8f8e0), (0x00f8f8f8)
 };
 
 uint8_t reg_status = 0;
@@ -8893,7 +8898,7 @@ OSCILLATOR_Initialize();
 
 TMR5_Initialize();
 
-# 106
+# 113
 TMR0_Initialize();
 
 
@@ -8914,7 +8919,7 @@ pi_power.stopped_count -= 1;
 else
 pi_power.stopped_count = 0;
 
-# 137
+# 144
 if (STANDBY == pi_power.state)
 {
 
@@ -8934,7 +8939,7 @@ request_pi_stop();
 
 led_color = (0);
 
-# 161
+# 168
 if (pi_power.power_switch)
 pi_power.state = BOOTING;
 else
@@ -8942,7 +8947,7 @@ pi_power.state = STANDBY;
 
 }
 
-# 174
+# 181
 else if (BOOTING == pi_power.state)
 {
 
@@ -8961,17 +8966,17 @@ pi_supply_on();
 
 request_pi_run();
 
-# 194
+# 201
 if (pi_power.power_switch == (0))
 pi_power.state = STANDBY;
 
-# 199
+# 206
 if (pi_power.running == (1))
 pi_power.state = OPERATE;
 
 }
 
-# 213
+# 220
 else if (OPERATE == pi_power.state)
 {
 
@@ -8990,14 +8995,14 @@ pi_supply_on();
 
 request_pi_run();
 
-# 234
+# 241
 if (pi_power.power_switch == 0)
 {
 request_pi_stop();
 pi_power.state = SHUTDOWN;
 }
 
-# 243
+# 250
 if (pi_power.running == (0))
 {
 pi_power.state = PI_CONTROL;
@@ -9005,7 +9010,7 @@ pi_power.state = PI_CONTROL;
 
 }
 
-# 257
+# 264
 else if (SHUTDOWN == pi_power.state)
 {
 
@@ -9024,13 +9029,13 @@ pi_supply_on();
 
 request_pi_stop();
 
-# 277
+# 284
 if (pi_power.stopped_count > (100u))
 pi_power.state = STANDBY;
 
 }
 
-# 287
+# 294
 else if (PI_CONTROL == pi_power.state)
 {
 
@@ -9054,7 +9059,7 @@ pi_power.state = STANDBY;
 
 }
 
-# 315
+# 322
 else if (RESET == pi_power.state)
 {
 pi_power.state = STANDBY;
@@ -9084,9 +9089,11 @@ do { LATCbits.LATC0 = 0; } while(0);
 reg_status = 0;
 reg_control = 0;
 
+printf("\n\n\r!RESET!\n\n\r");
+
 }
 
-# 355
+# 364
 do { LATCbits.LATC5 = 1; } while(0);
 
 
@@ -9107,7 +9114,14 @@ pi5v = ((uint32_t)meas_pi5v * (uint32_t)5000 / (uint32_t)512);
 
 do { LATCbits.LATC5 = 0; } while(0);
 
-# 380
+# 389
+if (((1)))
+{
+led_color = (uint32_t)meas_tune << 4;
+prev_color = led_color + 1u;
+}
+
+
 if ( ((1)) )
 {
 printf("\n\n\rLED   0x%08lX",led_color);
@@ -9125,7 +9139,7 @@ printf("\n\n\rPi3V    %u mV",pi3v);
 printf("\n\rPi5V    %u mV",pi5v);
 }
 
-# 400
+# 416
 if (prev_color != led_color)
 {
 
@@ -9152,8 +9166,8 @@ prev_color = led_color;
 
 while (0 == TMR5_HasOverflowOccured());
 
-# 431
-if (led_pattern_idx++ >= (16u))
+# 447
+if (++led_pattern_idx >= (12))
 {
 led_pattern_idx = 0;
 }
@@ -9167,7 +9181,7 @@ else
 do { LATCbits.LATC0 = 1; } while(0);
 }
 
-# 447
+# 463
 pi_power.power_switch = TMR0_HasOverflowOccured();
 
 
@@ -9179,7 +9193,7 @@ update_status_reg();
 void update_status_reg(void)
 {
 
-# 471
+# 487
 reg_status = ((pi_power.power_switch & 1) << 7) |
 ((PORTDbits.RD2 & 1) << 6) |
 ((pi_power.running & 1) << 5 ) |
@@ -9211,7 +9225,7 @@ void request_pi_stop(void)
 do { LATCbits.LATC4 = 0; } while(0);
 }
 
-# 548
+# 564
 void I2C2_StatusCallback(I2C2_SLAVE_DRIVER_STATUS i2c_bus_state)
 {
 static uint8_t RegAddress = 0;

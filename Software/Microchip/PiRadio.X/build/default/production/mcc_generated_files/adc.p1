@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"13575 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"13575 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
 "13507
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
@@ -12,7 +12,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "80 mcc_generated_files/adc.c
 [c E6975 0 1 2 15 25 29 30 31 .. ]
 [n E6975 . channel_TUNE channel_BAND channel_VOL channel_PI5V channel_PI3V channel_CTMU channel_DAC channel_FVRBuf2  ]
-"13581 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"13581 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [s S640 :1 `uc 1 :1 `uc 1 ]
 [n S640 . . GO_NOT_DONE ]
 "13585
@@ -45,7 +45,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f44k22.h: 50: extern volatile unsigned char ANSELA @ 0xF38;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f44k22.h
+"52 D:\Program Files\Microchip\xc8\v1.44\include\pic18f44k22.h
 [; ;pic18f44k22.h: 52: asm("ANSELA equ 0F38h");
 [; <" ANSELA equ 0F38h ;# ">
 [; ;pic18f44k22.h: 55: typedef union {
@@ -6654,9 +6654,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;adc.c: 66: ADCON1 = 0x00;
 "66
 [e = _ADCON1 -> -> 0 `i `uc ]
-[; ;adc.c: 69: ADCON2 = 0x12;
+[; ;adc.c: 69: ADCON2 = 0x92;
 "69
-[e = _ADCON2 -> -> 18 `i `uc ]
+[e = _ADCON2 -> -> 146 `i `uc ]
 [; ;adc.c: 72: ADRESL = 0x00;
 "72
 [e = _ADRESL -> -> 0 `i `uc ]

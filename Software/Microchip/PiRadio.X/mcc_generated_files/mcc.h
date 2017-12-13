@@ -50,10 +50,10 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "interrupt_manager.h"
+#include "eusart1.h"
 #include "i2c2.h"
 #include "tmr0.h"
 #include "adc.h"
-#include "eusart1.h"
 #include "tmr5.h"
 
 #define _XTAL_FREQ  16000000
@@ -84,7 +84,6 @@ void SYSTEM_Initialize(void);
     OSCILLATOR_Initialize(void);
  */
 void OSCILLATOR_Initialize(void);
-
 
 /**
  * @Param
